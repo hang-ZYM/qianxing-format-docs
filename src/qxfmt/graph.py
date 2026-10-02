@@ -84,6 +84,27 @@ def string_storage(tv_tree):
     return f1 if f1 is not None and f1[1] == 2 else None
 
 
+def pin_edges(pin_tree):
+    """引脚 f5 的全部连线 → [(目标节点index, 目标shell_sig, 目标kernel_sig)]。
+
+    边存于源引脚、记录对端（目标）签名（docs/22 §3）：执行边对端 kind=1，
+    数据边对端 kind=4。
+    """
+    out = []
+    for e in all_of(pin_tree, 5):
+        if e[1] != 2:
+            continue
+        el = parse(e[2])
+        tgt = first(el, 1)
+        sigs = (first(el, 2), first(el, 3))
+        out.append((
+            varint_value(tgt) if tgt is not None and tgt[1] == 0 else None,
+            sigs[0][2] if sigs[0] is not None and sigs[0][1] == 2 else None,
+            sigs[1][2] if sigs[1] is not None and sigs[1][1] == 2 else None,
+        ))
+    return out
+
+
 def graph_guid(graph_nodes):
     """图身份 f1 ResourceLocator 的 f5 guid。"""
     f1 = first(graph_nodes, 1)
