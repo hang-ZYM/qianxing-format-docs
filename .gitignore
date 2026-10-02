@@ -2,3 +2,13 @@
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Python
+__pycache__/
+*.egg-info/
+build/
+dist/
+*.pyc
+
+# 本地测试产物
+_test_*

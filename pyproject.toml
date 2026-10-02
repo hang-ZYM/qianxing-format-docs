@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qxfmt"
+version = "0.1.0"
+description = "千星奇域（Miliastra Wonderland）关卡文件格式工具链：容器读写、保序字节手术、图合成与格式校验"
+readme = "QUICKSTART.md"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+qxfmt = "qxfmt.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
