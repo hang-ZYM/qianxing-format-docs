@@ -88,6 +88,7 @@
 
 | 版本 | 日期 | 内容 |
 |---|---|---|
+| v1.7.5 | 10-05 | qxfmt v0.2：pbtree 严格解析（F019b 判例——裸varint乱码曾过门禁被游戏拒）；trial_gate 解析失败=SICK |
 | v1.7.4 | 10-05 | examples/ 增补 `凯旋门_圣地.gia` 参考样本（266 件，元数据中性化，可 gia_extract 反向验证） |
 | v1.7.3 | 10-05 | **实体 BOM 工作流**：[docs/29](docs/29_实体BOM工作流与反向提取.md) + `src/gia_extract.py`（.gia 反向提取）+ `src/archdraw.py`（BOM→施工图）+ `examples/`（266 件凯旋门定版 BOM 与四图） |
 | v1.7.2 | 10-04 | 新增 [docs/28_验证方法与发现](docs/28_验证方法与发现.md)（方法与结论层） |

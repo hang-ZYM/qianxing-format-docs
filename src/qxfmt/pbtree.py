@@ -8,27 +8,50 @@
 """
 
 
-def parse(b: bytes):
+STRICT = True
+"""严格模式（2026-10-05 F019b 判例）：默认拒绝非法 protobuf——field 0 / 长度越界 /
+截断 / 超10字节 varint。宽松时代这些被静默吞掉，乱码包过了门禁才被游戏拒收。
+探索性解析疑似损坏数据时用 parse(b, strict=False)。"""
+
+
+def parse(b: bytes, strict: bool | None = None):
+    strict = STRICT if strict is None else strict
     out = []
     i = 0
     n = len(b)
     while i < n:
-        tag, i = _read_varint(b, i)
+        tag, i = _read_varint(b, i, strict)
         f, wt = tag >> 3, tag & 7
+        if strict and (f == 0 or f > 536_870_911):
+            raise ValueError(f"非法字段号 {f} @ {i}")
         if wt == 0:
             vstart = i
-            _, i = _read_varint(b, i)
+            _, i = _read_varint(b, i, strict)
             out.append([f, wt, b[vstart:i]])
         elif wt == 2:
-            ln, i = _read_varint(b, i)
-            out.append([f, wt, b[i:i + ln]])
-            i += ln
+            ln, i = _read_varint(b, i, strict)
+            if i + ln > n:
+                if strict:
+                    raise ValueError(f"f{f} 长度越界 @ {i}: 要 {ln} 只剩 {n - i}")
+                out.append([f, wt, b[i:]])
+                i = n
+            else:
+                out.append([f, wt, b[i:i + ln]])
+                i += ln
         elif wt == 5:
-            out.append([f, wt, b[i:i + 4]])
-            i += 4
+            if i + 4 > n:
+                if strict:
+                    raise ValueError(f"f{f} f32 截断 @ {i}")
+                out.append([f, wt, b[i:]]); i = n
+            else:
+                out.append([f, wt, b[i:i + 4]]); i += 4
         elif wt == 1:
-            out.append([f, wt, b[i:i + 8]])
-            i += 8
+            if i + 8 > n:
+                if strict:
+                    raise ValueError(f"f{f} f64 截断 @ {i}")
+                out.append([f, wt, b[i:]]); i = n
+            else:
+                out.append([f, wt, b[i:i + 8]]); i += 8
         else:
             raise ValueError(f"非法 wiretype {wt} @ {i}")
     return out
@@ -83,16 +106,22 @@ def set_varint_value(nd, value: int) -> None:
     nd[2] = _enc_varint(value)
 
 
-def _read_varint(b, i):
+def _read_varint(b, i, strict=True):
     v = 0
     s = 0
+    cnt = 0
     while True:
+        if i >= len(b):
+            raise ValueError(f"varint 截断 @ {i}")
         x = b[i]
         i += 1
+        cnt += 1
         v |= (x & 0x7F) << s
         s += 7
         if not (x & 0x80):
             return v, i
+        if strict and cnt >= 10:
+            raise ValueError(f"varint 超10字节 @ {i}")
 
 
 def _enc_varint(n: int) -> bytes:
