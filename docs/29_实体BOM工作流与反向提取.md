@@ -86,8 +86,10 @@ python -m gia_extract 文件.gia --json out.json
 python -m archdraw examples/凯旋门_圣地_BOM.json --out out/
 ```
 
-示例：`examples/` 下为 266 件凯旋门（用户定版）BOM 及 archdraw 生成的四张图。
-合成方向（BOM → .gia）依赖内部维护的样本库，不在本仓库发布范围内。
+示例：`examples/` 下为 266 件凯旋门（用户定版）参考样本——BOM、archdraw 生成的四张图，
+以及一份**可直接用于格式研究的 .gia 样本**（`凯旋门_圣地.gia`，由该 BOM 合成、
+元数据已中性化；可用 `gia_extract` 反向验证）。
+合成方向（BOM → .gia 的生成器）依赖内部维护的样本库，不在本仓库发布范围内。
 
 ## 7. 开放问题
 
