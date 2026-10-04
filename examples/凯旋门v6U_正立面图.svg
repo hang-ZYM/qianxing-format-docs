@@ -1,0 +1,412 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="1560" viewBox="0 0 1520 1560">
+<rect width="1520" height="1560" fill="#faf7f2"/>
+<rect x="14" y="14" width="1492" height="1532" fill="none" stroke="#d8d2c4" stroke-width="1.2"/>
+<text x="760.0" y="36.0" font-size="17" text-anchor="middle" fill="#2b2b2b" font-family="Microsoft YaHei, sans-serif" font-weight="bold">凯旋门 v6U · 圣地大门版 — 正立面施工图</text>
+<text x="760.0" y="54.0" font-size="9.5" text-anchor="middle" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">千星奇域 A+B 工艺 ｜ BOM 266 件 · 左右镜像对称 ｜ 数据源: 凯旋门v6U_BOM.json ｜ 比例 80 px/m</text>
+<line x1="184.0" y1="1330.0" x2="1336.0" y2="1330.0" stroke="#3a332c" stroke-width="2.5"/>
+<rect x="236" y="1330" width="1048" height="4" fill="#ddd8cd"/>
+<path d="M 276.2,1272.4 L 276.2,505.6 L 1243.8,505.6 L 1243.8,1272.4 L 540.2,1272.4 L 540.2,902.0 975.8,902.0 L973.9,873.8 L968.4,846.1 L959.4,819.4 L946.9,794.1 L931.2,770.6 L912.6,749.4 L891.4,730.8 L867.9,715.1 L842.6,702.6 L815.9,693.6 L788.2,688.1 L760.0,686.2 L731.8,688.1 L704.1,693.6 L677.4,702.6 L652.1,715.1 L628.6,730.8 L607.4,749.4 L588.8,770.6 L573.1,794.1 L560.6,819.4 L551.6,846.1 L546.1,873.8 L544.2,902.0 L 979.8,1272.4 Z" fill="#cfc0a6" stroke="#4a4238" stroke-width="1.4"/>
+<rect x="244.2" y="1312.4" width="1032.0" height="20.8" fill="#c2b499" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="260.2" y="1292.8" width="1000.0" height="20.0" fill="#c2b499" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="276.2" y="1280.0" width="968.0" height="12.0" fill="#c2b499" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="274.2" y="1272.4" width="972.0" height="8.0" fill="#beb096" stroke="#4a4238" stroke-width="0.9"/>
+<line x1="276.2" y1="1272.4" x2="1243.8" y2="1272.4" stroke="#a89a80" stroke-width="0.7"/>
+<rect x="500.2" y="505.6" width="520.0" height="124.0" fill="#b9a88c" stroke="#4a4238" stroke-width="0.8"/>
+<rect x="586.2" y="553.6" width="92.0" height="28.0" fill="#c3b49a" stroke="#4a4238" stroke-width="0.7"/>
+<rect x="842.2" y="553.6" width="92.0" height="28.0" fill="#c3b49a" stroke="#4a4238" stroke-width="0.7"/>
+<path d="M975.8,902.0 L973.9,873.8 L968.4,846.1 L959.4,819.4 L946.9,794.1 L931.2,770.6 L912.6,749.4 L891.4,730.8 L867.9,715.1 L842.6,702.6 L815.9,693.6 L788.2,688.1 L760.0,686.2 L731.8,688.1 L704.1,693.6 L677.4,702.6 L652.1,715.1 L628.6,730.8 L607.4,749.4 L588.8,770.6 L573.1,794.1 L560.6,819.4 L551.6,846.1 L546.1,873.8 L544.2,902.0" fill="none" stroke="#c9c4bb" stroke-width="1.2"/>
+<path d="M983.8,902.0 L981.9,872.8 L976.2,844.1 L966.8,816.4 L953.8,790.1 L937.5,765.8 L918.2,743.8 L896.2,724.5 L871.9,708.2 L845.6,695.2 L817.9,685.8 L789.2,680.1 L760.0,678.2 L730.8,680.1 L702.1,685.8 L674.4,695.2 L648.1,708.2 L623.8,724.5 L601.8,743.8 L582.5,765.8 L566.2,790.1 L553.2,816.4 L543.8,844.1 L538.1,872.8 L536.2,902.0" fill="none" stroke="#d8d4cb" stroke-width="0.8"/>
+<path d="M500.2,902.0 L502.4,868.1 L509.1,834.8 L520.0,802.6 L535.0,772.1 L553.9,743.8 L576.3,718.3 L601.8,695.9 L630.1,677.0 L660.6,662.0 L692.8,651.1 L726.1,644.4 L760.0,642.2 L793.9,644.4 L827.2,651.1 L859.4,662.0 L889.9,677.0 L918.2,695.9 L943.7,718.3 L966.1,743.8 L985.0,772.1 L1000.0,802.6 L1010.9,834.8 L1017.6,868.1 L1019.8,902.0 L975.8,902.0 L973.9,873.8 L968.4,846.1 L959.4,819.4 L946.9,794.1 L931.2,770.6 L912.6,749.4 L891.4,730.8 L867.9,715.1 L842.6,702.6 L815.9,693.6 L788.2,688.1 L760.0,686.2 L731.8,688.1 L704.1,693.6 L677.4,702.6 L652.1,715.1 L628.6,730.8 L607.4,749.4 L588.8,770.6 L573.1,794.1 L560.6,819.4 L551.6,846.1 L546.1,873.8 L544.2,902.0 Z" fill="#a89878" stroke="#4a4238" stroke-width="1.1"/>
+<path d="M469.7,902.0 L472.2,864.1 L479.6,826.9 L491.8,790.9 L508.6,756.9 L529.7,725.3 L554.8,696.8 L583.3,671.7 L614.9,650.6 L648.9,633.8 L684.9,621.6 L722.1,614.2 L760.0,611.7 L797.9,614.2 L835.1,621.6 L871.1,633.8 L905.1,650.6 L936.7,671.7 L965.2,696.8 L990.3,725.3 L1011.4,756.9 L1028.2,790.9 L1040.4,826.9 L1047.8,864.1 L1050.3,902.0 L1014.3,902.0 L1012.1,868.8 L1005.6,836.2 L994.9,804.7 L980.2,774.9 L961.7,747.2 L939.8,722.2 L914.8,700.3 L887.1,681.8 L857.3,667.1 L825.8,656.4 L793.2,649.9 L760.0,647.7 L726.8,649.9 L694.2,656.4 L662.7,667.1 L632.9,681.8 L605.2,700.3 L580.2,722.2 L558.3,747.2 L539.8,774.9 L525.1,804.7 L514.4,836.2 L507.9,868.8 L505.7,902.0 Z" fill="#b0a081" stroke="#4a4238" stroke-width="1.1"/>
+<line x1="976.3" y1="873.5" x2="1015.2" y2="868.4" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="1014.5" y1="868.5" x2="1045.4" y2="864.4" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="961.6" y1="818.5" x2="997.8" y2="803.5" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="997.1" y1="803.8" x2="1025.9" y2="791.8" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="933.1" y1="769.2" x2="964.2" y2="745.3" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="963.6" y1="745.8" x2="988.4" y2="726.8" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="892.8" y1="728.9" x2="916.7" y2="697.8" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="916.2" y1="698.4" x2="935.2" y2="673.6" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="843.5" y1="700.4" x2="858.5" y2="664.2" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="858.2" y1="664.9" x2="870.2" y2="636.1" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="788.5" y1="685.7" x2="793.6" y2="646.8" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="793.5" y1="647.5" x2="797.6" y2="616.6" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="731.5" y1="685.7" x2="726.4" y2="646.8" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="726.5" y1="647.5" x2="722.4" y2="616.6" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="676.5" y1="700.4" x2="661.5" y2="664.2" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="661.8" y1="664.9" x2="649.8" y2="636.1" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="627.2" y1="728.9" x2="603.3" y2="697.8" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="603.8" y1="698.4" x2="584.8" y2="673.6" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="586.9" y1="769.2" x2="555.8" y2="745.3" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="556.4" y1="745.8" x2="531.6" y2="726.8" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="558.4" y1="818.5" x2="522.2" y2="803.5" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="522.9" y1="803.8" x2="494.1" y2="791.8" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="543.7" y1="873.5" x2="504.8" y2="868.4" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="505.5" y1="868.5" x2="474.6" y2="864.4" stroke="#8f7f63" stroke-width="0.8"/>
+<path d="M 727.6,644.0 L 724.0,568.0 L 796.0,568.0 L 792.4,644.0 Z" fill="#ddd0b8" stroke="#4a4238" stroke-width="1.2"/>
+<line x1="737.8" y1="606.0" x2="782.6" y2="606.0" stroke="#8f7f63" stroke-width="0.8"/>
+<rect x="276.2" y="874.4" width="264.0" height="28.0" fill="#beb096" stroke="#4a4238" stroke-width="0.8"/>
+<rect x="980.2" y="874.4" width="264.0" height="28.0" fill="#beb096" stroke="#4a4238" stroke-width="0.8"/>
+<rect x="440.2" y="1081.6" width="80.0" height="220.0" fill="#b5a68b" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="1000.2" y="1081.6" width="80.0" height="220.0" fill="#b5a68b" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="446.2" y="1061.6" width="68.0" height="20.0" fill="#ddd0b8" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="1006.2" y="1061.6" width="68.0" height="20.0" fill="#ddd0b8" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="454.2" y="749.2" width="52.0" height="312.0" fill="#ddd0b8" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="1014.2" y="749.2" width="52.0" height="312.0" fill="#ddd0b8" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="450.2" y="737.6" width="60.0" height="12.0" fill="#ddd0b8" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="1010.2" y="737.6" width="60.0" height="12.0" fill="#ddd0b8" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="442.2" y="705.2" width="76.0" height="32.0" fill="#ddd0b8" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="1002.2" y="705.2" width="76.0" height="32.0" fill="#ddd0b8" stroke="#4a4238" stroke-width="0.9"/>
+<line x1="467.4" y1="620.0" x2="467.4" y2="515.2" stroke="#b8a98d" stroke-width="0.9"/>
+<line x1="480.2" y1="620.0" x2="480.2" y2="515.2" stroke="#b8a98d" stroke-width="0.9"/>
+<line x1="493.0" y1="620.0" x2="493.0" y2="515.2" stroke="#b8a98d" stroke-width="0.9"/>
+<line x1="506.2" y1="505.6" x2="506.2" y2="629.6" stroke="#a08f73" stroke-width="1.6"/>
+<line x1="1027.4" y1="620.0" x2="1027.4" y2="515.2" stroke="#b8a98d" stroke-width="0.9"/>
+<line x1="1040.2" y1="620.0" x2="1040.2" y2="515.2" stroke="#b8a98d" stroke-width="0.9"/>
+<line x1="1053.0" y1="620.0" x2="1053.0" y2="515.2" stroke="#b8a98d" stroke-width="0.9"/>
+<line x1="1066.2" y1="505.6" x2="1066.2" y2="629.6" stroke="#a08f73" stroke-width="1.6"/>
+<rect x="346.6" y="672.8" width="51.2" height="50.4" fill="#e9e6df" stroke="#4a4238" stroke-width="0.8"/>
+<line x1="372.2" y1="723.2" x2="372.2" y2="672.8" stroke="#b8ad9c" stroke-width="0.6"/>
+<line x1="346.6" y1="698.0" x2="397.8" y2="698.0" stroke="#b8ad9c" stroke-width="0.6"/>
+<rect x="1122.6" y="672.8" width="51.2" height="50.4" fill="#e9e6df" stroke="#4a4238" stroke-width="0.8"/>
+<line x1="1148.2" y1="723.2" x2="1148.2" y2="672.8" stroke="#b8ad9c" stroke-width="0.6"/>
+<line x1="1122.6" y1="698.0" x2="1173.8" y2="698.0" stroke="#b8ad9c" stroke-width="0.6"/>
+<rect x="280.2" y="469.6" width="960.0" height="36.0" fill="#beb096" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="276.2" y="425.6" width="968.0" height="44.0" fill="#b3a389" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="1153.8" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="1112.2" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="1070.6" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="1029.0" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="987.4" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="945.8" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="904.2" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="862.6" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="821.0" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="779.4" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="737.8" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="696.2" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="654.6" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="613.0" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="571.4" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="529.8" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="488.2" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="446.6" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="405.0" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="363.4" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="321.8" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="280.2" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="1237.0" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="1195.4" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="252.2" y="375.2" width="1016.0" height="28.0" fill="#9a8a70" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="264.2" y="367.6" width="992.0" height="8.0" fill="#8f7f63" stroke="#4a4238" stroke-width="0.9"/>
+<line x1="252.2" y1="403.2" x2="1268.2" y2="403.2" stroke="#7d6e57" stroke-width="1.2"/>
+<rect x="312.2" y="222.0" width="896.0" height="145.6" fill="#cfc0a6" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="613.0" y="235.6" width="294.4" height="118.4" fill="#ddd0b8" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="628.2" y="250.8" width="264.0" height="88.0" fill="#b9a88c" stroke="#4a4238" stroke-width="0.7"/>
+<line x1="650.6" y1="318.0" x2="869.8" y2="318.0" stroke="#a89a7f" stroke-width="0.7"/>
+<line x1="650.6" y1="294.8" x2="869.8" y2="294.8" stroke="#a89a7f" stroke-width="0.7"/>
+<line x1="650.6" y1="271.6" x2="869.8" y2="271.6" stroke="#a89a7f" stroke-width="0.7"/>
+<rect x="296.2" y="198.0" width="928.0" height="24.0" fill="#9a8a70" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="308.2" y="190.0" width="904.0" height="8.0" fill="#8f7f63" stroke="#4a4238" stroke-width="0.6"/>
+<rect x="673.8" y="110.0" width="172.8" height="56.0" fill="#3d665a" stroke="#4a4238" stroke-width="0.9"/>
+<line x1="846.6" y1="166.0" x2="760.0" y2="110.0" stroke="#4a7a6a" stroke-width="4" stroke-linecap="round"/>
+<line x1="673.4" y1="166.0" x2="760.0" y2="110.0" stroke="#4a7a6a" stroke-width="4" stroke-linecap="round"/>
+<rect x="667.4" y="162.0" width="185.6" height="8.0" fill="#4a7a6a" stroke="#4a4238" stroke-width="0.6"/>
+<rect x="356.2" y="92.8" width="40.0" height="36.0" fill="#8e2438" stroke="#4a4238" stroke-width="0.8"/>
+<line x1="376.2" y1="128.8" x2="376.2" y2="154.8" stroke="#6b5a44" stroke-width="1.0"/>
+<rect x="1124.2" y="92.8" width="40.0" height="36.0" fill="#8e2438" stroke="#4a4238" stroke-width="0.8"/>
+<line x1="1144.2" y1="128.8" x2="1144.2" y2="154.8" stroke="#6b5a44" stroke-width="1.0"/>
+<path d="M 760.2,80.0 L 745.8,92.8 L 774.6,92.8 Z" fill="#8e2438" stroke="#4a4238" stroke-width="0.7"/>
+<line x1="284.2" y1="479.6" x2="284.2" y2="353.2" stroke="#6b5a44" stroke-width="1.5"/>
+<path d="M 284.2,355.6 L 325.8,368.4 L 284.2,381.2 Z" fill="#8e2438" stroke="#4a4238" stroke-width="0.6"/>
+<line x1="1236.2" y1="479.6" x2="1236.2" y2="353.2" stroke="#6b5a44" stroke-width="1.5"/>
+<path d="M 1236.2,355.6 L 1277.8,368.4 L 1236.2,381.2 Z" fill="#8e2438" stroke="#4a4238" stroke-width="0.6"/>
+<line x1="244.0" y1="1358.0" x2="1276.0" y2="1358.0" stroke="#999080" stroke-width="0.9"/>
+<line x1="240.0" y1="1362.0" x2="248.0" y2="1354.0" stroke="#999080" stroke-width="0.9"/>
+<line x1="1272.0" y1="1362.0" x2="1280.0" y2="1354.0" stroke="#999080" stroke-width="0.9"/>
+<text x="760.0" y="1353.0" font-size="10" text-anchor="middle" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">12.90 m (台阶总宽)</text>
+<line x1="979.8" y1="1386.0" x2="540.2" y2="1386.0" stroke="#999080" stroke-width="0.9"/>
+<line x1="975.8" y1="1390.0" x2="983.8" y2="1382.0" stroke="#999080" stroke-width="0.9"/>
+<line x1="536.2" y1="1390.0" x2="544.2" y2="1382.0" stroke="#999080" stroke-width="0.9"/>
+<text x="760.0" y="1381.0" font-size="9.5" text-anchor="middle" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">-5.50 m (门洞净宽)</text>
+<line x1="1320.0" y1="1330.0" x2="1320.0" y2="56.0" stroke="#999080" stroke-width="0.9"/>
+<line x1="1315.0" y1="1330.0" x2="1325.0" y2="1330.0" stroke="#999080" stroke-width="0.9"/>
+<text x="1330.0" y="1333.0" font-size="8" text-anchor="start" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">0.00  地面</text>
+<line x1="1315.0" y1="1272.4" x2="1325.0" y2="1272.4" stroke="#999080" stroke-width="0.9"/>
+<text x="1330.0" y="1275.4" font-size="8" text-anchor="start" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">0.72  台面</text>
+<line x1="1315.0" y1="902.0" x2="1325.0" y2="902.0" stroke="#999080" stroke-width="0.9"/>
+<text x="1330.0" y="905.0" font-size="8" text-anchor="start" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">5.35  起拱线</text>
+<line x1="1315.0" y1="686.2" x2="1325.0" y2="686.2" stroke="#999080" stroke-width="0.9"/>
+<text x="1330.0" y="689.2" font-size="8" text-anchor="start" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">8.05  拱冠内顶</text>
+<line x1="1315.0" y1="505.6" x2="1325.0" y2="505.6" stroke="#999080" stroke-width="0.9"/>
+<text x="1330.0" y="508.6" font-size="8" text-anchor="start" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">10.30  檐底</text>
+<line x1="1315.0" y1="367.6" x2="1325.0" y2="367.6" stroke="#999080" stroke-width="0.9"/>
+<text x="1330.0" y="370.6" font-size="8" text-anchor="start" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">12.03  檐顶</text>
+<line x1="1315.0" y1="198.0" x2="1325.0" y2="198.0" stroke="#999080" stroke-width="0.9"/>
+<text x="1330.0" y="201.0" font-size="8" text-anchor="start" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">14.15  阁楼顶</text>
+<line x1="1315.0" y1="80.0" x2="1325.0" y2="80.0" stroke="#999080" stroke-width="0.9"/>
+<text x="1330.0" y="83.0" font-size="8" text-anchor="start" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">15.62  脊顶</text>
+<line x1="200.0" y1="1298.0" x2="232.0" y2="1298.0" stroke="#999080" stroke-width="0.8" stroke-dasharray="3,3"/>
+<circle cx="232.0" cy="1298.0" r="2.2" fill="#999080"/>
+<text x="194.0" y="1301.5" font-size="9.5" text-anchor="end" fill="#2b2b2b" font-family="Microsoft YaHei, sans-serif">① 基座层 (4件)</text>
+<line x1="200.0" y1="1086.8" x2="232.0" y2="1086.8" stroke="#999080" stroke-width="0.8" stroke-dasharray="3,3"/>
+<circle cx="232.0" cy="1086.8" r="2.2" fill="#999080"/>
+<text x="194.0" y="1090.3" font-size="9.5" text-anchor="end" fill="#2b2b2b" font-family="Microsoft YaHei, sans-serif">② 墩身层·柱式 (34件)</text>
+<line x1="200.0" y1="790.0" x2="232.0" y2="790.0" stroke="#999080" stroke-width="0.8" stroke-dasharray="3,3"/>
+<circle cx="232.0" cy="790.0" r="2.2" fill="#999080"/>
+<text x="194.0" y="793.5" font-size="9.5" text-anchor="end" fill="#2b2b2b" font-family="Microsoft YaHei, sans-serif">③ 拱券层 (139件)</text>
+<line x1="200.0" y1="425.6" x2="232.0" y2="425.6" stroke="#999080" stroke-width="0.8" stroke-dasharray="3,3"/>
+<circle cx="232.0" cy="425.6" r="2.2" fill="#999080"/>
+<text x="194.0" y="429.1" font-size="9.5" text-anchor="end" fill="#2b2b2b" font-family="Microsoft YaHei, sans-serif">④ 檐部层 (56件)</text>
+<line x1="200.0" y1="294.8" x2="232.0" y2="294.8" stroke="#999080" stroke-width="0.8" stroke-dasharray="3,3"/>
+<circle cx="232.0" cy="294.8" r="2.2" fill="#999080"/>
+<text x="194.0" y="298.3" font-size="9.5" text-anchor="end" fill="#2b2b2b" font-family="Microsoft YaHei, sans-serif">⑤ 阁楼层 (23件)</text>
+<line x1="200.0" y1="112.0" x2="232.0" y2="112.0" stroke="#999080" stroke-width="0.8" stroke-dasharray="3,3"/>
+<circle cx="232.0" cy="112.0" r="2.2" fill="#999080"/>
+<text x="194.0" y="115.5" font-size="9.5" text-anchor="end" fill="#2b2b2b" font-family="Microsoft YaHei, sans-serif">⑥ 屋顶+旗 (6件)</text>
+<line x1="392.0" y1="1086.8" x2="200.0" y2="1100.8" stroke="#999080" stroke-width="0.7"/>
+<circle cx="392.0" cy="1086.8" r="2" fill="#999080"/>
+<text x="200.0" y="1103.8" font-size="8" text-anchor="end" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">墩身贴皮 石质墙壁20001337</text>
+<line x1="520.2" y1="765.2" x2="560.2" y2="725.2" stroke="#999080" stroke-width="0.7"/>
+<circle cx="520.2" cy="765.2" r="2" fill="#999080"/>
+<text x="560.2" y="728.2" font-size="8" text-anchor="start" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">半柱五段 白盒10009001/10009008</text>
+<line x1="1048.3" y1="854.0" x2="1096.3" y2="886.0" stroke="#999080" stroke-width="0.7"/>
+<circle cx="1048.3" cy="854.0" r="2" fill="#999080"/>
+<text x="1096.3" y="889.0" font-size="8" text-anchor="start" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">券石×48+外圈饰×72</text>
+<line x1="796.2" y1="574.0" x2="832.2" y2="546.0" stroke="#999080" stroke-width="0.7"/>
+<circle cx="796.2" cy="574.0" r="2" fill="#999080"/>
+<text x="832.2" y="549.0" font-size="8" text-anchor="start" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">拱心石(凸出)</text>
+<line x1="1237.0" y1="393.2" x2="1309.0" y2="399.2" stroke="#999080" stroke-width="0.7"/>
+<circle cx="1237.0" cy="393.2" r="2" fill="#999080"/>
+<text x="1309.0" y="402.2" font-size="8" text-anchor="start" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">齿饰块×48</text>
+<line x1="604.2" y1="250.8" x2="564.2" y2="240.8" stroke="#999080" stroke-width="0.7"/>
+<circle cx="604.2" cy="250.8" r="2" fill="#999080"/>
+<text x="564.2" y="243.8" font-size="8" text-anchor="end" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">铭文碑板(凹色)</text>
+<line x1="856.0" y1="110.0" x2="896.0" y2="104.0" stroke="#999080" stroke-width="0.7"/>
+<circle cx="856.0" cy="110.0" r="2" fill="#999080"/>
+<text x="896.0" y="107.0" font-size="8" text-anchor="start" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">瓦坡20002120(本色)</text>
+<line x1="372.2" y1="672.8" x2="324.2" y2="694.8" stroke="#999080" stroke-width="0.7"/>
+<circle cx="372.2" cy="672.8" r="2" fill="#999080"/>
+<text x="324.2" y="697.8" font-size="8" text-anchor="end" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">卫室窗20002154</text>
+<rect x="90.0" y="1464.0" width="18" height="11" fill="#cfc0a6" stroke="#4a4238" stroke-width="0.7"/>
+<text x="114.0" y="1473.5" font-size="8.5" text-anchor="start" fill="#2b2b2b" font-family="Microsoft YaHei, sans-serif">墙体·墩身/拱上墙</text>
+<rect x="230.0" y="1464.0" width="18" height="11" fill="#b9a88c" stroke="#4a4238" stroke-width="0.7"/>
+<text x="254.0" y="1473.5" font-size="8.5" text-anchor="start" fill="#2b2b2b" font-family="Microsoft YaHei, sans-serif">凹入·贴皮</text>
+<rect x="370.0" y="1464.0" width="18" height="11" fill="#a89878" stroke="#4a4238" stroke-width="0.7"/>
+<text x="394.0" y="1473.5" font-size="8.5" text-anchor="start" fill="#2b2b2b" font-family="Microsoft YaHei, sans-serif">拱券带</text>
+<rect x="510.0" y="1464.0" width="18" height="11" fill="#ddd0b8" stroke="#4a4238" stroke-width="0.7"/>
+<text x="534.0" y="1473.5" font-size="8.5" text-anchor="start" fill="#2b2b2b" font-family="Microsoft YaHei, sans-serif">半柱·凸出件</text>
+<rect x="650.0" y="1464.0" width="18" height="11" fill="#9a8a70" stroke="#4a4238" stroke-width="0.7"/>
+<text x="674.0" y="1473.5" font-size="8.5" text-anchor="start" fill="#2b2b2b" font-family="Microsoft YaHei, sans-serif">檐部·齿饰</text>
+<rect x="790.0" y="1464.0" width="18" height="11" fill="#4a7a6a" stroke="#4a4238" stroke-width="0.7"/>
+<text x="814.0" y="1473.5" font-size="8.5" text-anchor="start" fill="#2b2b2b" font-family="Microsoft YaHei, sans-serif">瓦坡屋顶</text>
+<rect x="930.0" y="1464.0" width="18" height="11" fill="#8e2438" stroke="#4a4238" stroke-width="0.7"/>
+<text x="954.0" y="1473.5" font-size="8.5" text-anchor="start" fill="#2b2b2b" font-family="Microsoft YaHei, sans-serif">旗·脊饰</text>
+<text x="90.0" y="1494.0" font-size="8.5" text-anchor="start" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">A+B 工艺: 白盒骨架(10009001/10009008/10009006) + 石纹贴皮切片(20001337/20001335/20002158) + 本色件(窗/瓦/旗) ｜ generated by archdraw</text>
+<text x="1430.0" y="1520.0" font-size="8" text-anchor="end" fill="#b0a89a" font-family="Microsoft YaHei, sans-serif">archdraw · 千星奇域</text>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="1560" viewBox="0 0 1520 1560">
+<rect width="1520" height="1560" fill="#faf7f2"/>
+<rect x="14" y="14" width="1492" height="1532" fill="none" stroke="#d8d2c4" stroke-width="1.2"/>
+<text x="760.0" y="36.0" font-size="17" text-anchor="middle" fill="#2b2b2b" font-family="Microsoft YaHei, sans-serif" font-weight="bold">凯旋门 v6U · 圣地大门版 — 正立面施工图</text>
+<text x="760.0" y="54.0" font-size="9.5" text-anchor="middle" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">千星奇域 A+B 工艺 ｜ BOM 266 件 · 左右镜像对称 ｜ 数据源: 凯旋门v6U_BOM.json ｜ 比例 80 px/m</text>
+<line x1="184.0" y1="1330.0" x2="1336.0" y2="1330.0" stroke="#3a332c" stroke-width="2.5"/>
+<rect x="236" y="1330" width="1048" height="4" fill="#ddd8cd"/>
+<path d="M 276.2,1272.4 L 276.2,505.6 L 1243.8,505.6 L 1243.8,1272.4 L 540.2,1272.4 L 540.2,902.0 975.8,902.0 L973.9,873.8 L968.4,846.1 L959.4,819.4 L946.9,794.1 L931.2,770.6 L912.6,749.4 L891.4,730.8 L867.9,715.1 L842.6,702.6 L815.9,693.6 L788.2,688.1 L760.0,686.2 L731.8,688.1 L704.1,693.6 L677.4,702.6 L652.1,715.1 L628.6,730.8 L607.4,749.4 L588.8,770.6 L573.1,794.1 L560.6,819.4 L551.6,846.1 L546.1,873.8 L544.2,902.0 L 979.8,1272.4 Z" fill="#cfc0a6" stroke="#4a4238" stroke-width="1.4"/>
+<rect x="244.2" y="1312.4" width="1032.0" height="20.8" fill="#c2b499" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="260.2" y="1292.8" width="1000.0" height="20.0" fill="#c2b499" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="276.2" y="1280.0" width="968.0" height="12.0" fill="#c2b499" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="274.2" y="1272.4" width="972.0" height="8.0" fill="#beb096" stroke="#4a4238" stroke-width="0.9"/>
+<line x1="276.2" y1="1272.4" x2="1243.8" y2="1272.4" stroke="#a89a80" stroke-width="0.7"/>
+<rect x="500.2" y="505.6" width="520.0" height="124.0" fill="#b9a88c" stroke="#4a4238" stroke-width="0.8"/>
+<rect x="586.2" y="553.6" width="92.0" height="28.0" fill="#c3b49a" stroke="#4a4238" stroke-width="0.7"/>
+<rect x="842.2" y="553.6" width="92.0" height="28.0" fill="#c3b49a" stroke="#4a4238" stroke-width="0.7"/>
+<path d="M975.8,902.0 L973.9,873.8 L968.4,846.1 L959.4,819.4 L946.9,794.1 L931.2,770.6 L912.6,749.4 L891.4,730.8 L867.9,715.1 L842.6,702.6 L815.9,693.6 L788.2,688.1 L760.0,686.2 L731.8,688.1 L704.1,693.6 L677.4,702.6 L652.1,715.1 L628.6,730.8 L607.4,749.4 L588.8,770.6 L573.1,794.1 L560.6,819.4 L551.6,846.1 L546.1,873.8 L544.2,902.0" fill="none" stroke="#c9c4bb" stroke-width="1.2"/>
+<path d="M983.8,902.0 L981.9,872.8 L976.2,844.1 L966.8,816.4 L953.8,790.1 L937.5,765.8 L918.2,743.8 L896.2,724.5 L871.9,708.2 L845.6,695.2 L817.9,685.8 L789.2,680.1 L760.0,678.2 L730.8,680.1 L702.1,685.8 L674.4,695.2 L648.1,708.2 L623.8,724.5 L601.8,743.8 L582.5,765.8 L566.2,790.1 L553.2,816.4 L543.8,844.1 L538.1,872.8 L536.2,902.0" fill="none" stroke="#d8d4cb" stroke-width="0.8"/>
+<path d="M500.2,902.0 L502.4,868.1 L509.1,834.8 L520.0,802.6 L535.0,772.1 L553.9,743.8 L576.3,718.3 L601.8,695.9 L630.1,677.0 L660.6,662.0 L692.8,651.1 L726.1,644.4 L760.0,642.2 L793.9,644.4 L827.2,651.1 L859.4,662.0 L889.9,677.0 L918.2,695.9 L943.7,718.3 L966.1,743.8 L985.0,772.1 L1000.0,802.6 L1010.9,834.8 L1017.6,868.1 L1019.8,902.0 L975.8,902.0 L973.9,873.8 L968.4,846.1 L959.4,819.4 L946.9,794.1 L931.2,770.6 L912.6,749.4 L891.4,730.8 L867.9,715.1 L842.6,702.6 L815.9,693.6 L788.2,688.1 L760.0,686.2 L731.8,688.1 L704.1,693.6 L677.4,702.6 L652.1,715.1 L628.6,730.8 L607.4,749.4 L588.8,770.6 L573.1,794.1 L560.6,819.4 L551.6,846.1 L546.1,873.8 L544.2,902.0 Z" fill="#a89878" stroke="#4a4238" stroke-width="1.1"/>
+<path d="M469.7,902.0 L472.2,864.1 L479.6,826.9 L491.8,790.9 L508.6,756.9 L529.7,725.3 L554.8,696.8 L583.3,671.7 L614.9,650.6 L648.9,633.8 L684.9,621.6 L722.1,614.2 L760.0,611.7 L797.9,614.2 L835.1,621.6 L871.1,633.8 L905.1,650.6 L936.7,671.7 L965.2,696.8 L990.3,725.3 L1011.4,756.9 L1028.2,790.9 L1040.4,826.9 L1047.8,864.1 L1050.3,902.0 L1014.3,902.0 L1012.1,868.8 L1005.6,836.2 L994.9,804.7 L980.2,774.9 L961.7,747.2 L939.8,722.2 L914.8,700.3 L887.1,681.8 L857.3,667.1 L825.8,656.4 L793.2,649.9 L760.0,647.7 L726.8,649.9 L694.2,656.4 L662.7,667.1 L632.9,681.8 L605.2,700.3 L580.2,722.2 L558.3,747.2 L539.8,774.9 L525.1,804.7 L514.4,836.2 L507.9,868.8 L505.7,902.0 Z" fill="#b0a081" stroke="#4a4238" stroke-width="1.1"/>
+<line x1="976.3" y1="873.5" x2="1015.2" y2="868.4" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="1014.5" y1="868.5" x2="1045.4" y2="864.4" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="961.6" y1="818.5" x2="997.8" y2="803.5" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="997.1" y1="803.8" x2="1025.9" y2="791.8" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="933.1" y1="769.2" x2="964.2" y2="745.3" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="963.6" y1="745.8" x2="988.4" y2="726.8" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="892.8" y1="728.9" x2="916.7" y2="697.8" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="916.2" y1="698.4" x2="935.2" y2="673.6" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="843.5" y1="700.4" x2="858.5" y2="664.2" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="858.2" y1="664.9" x2="870.2" y2="636.1" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="788.5" y1="685.7" x2="793.6" y2="646.8" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="793.5" y1="647.5" x2="797.6" y2="616.6" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="731.5" y1="685.7" x2="726.4" y2="646.8" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="726.5" y1="647.5" x2="722.4" y2="616.6" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="676.5" y1="700.4" x2="661.5" y2="664.2" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="661.8" y1="664.9" x2="649.8" y2="636.1" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="627.2" y1="728.9" x2="603.3" y2="697.8" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="603.8" y1="698.4" x2="584.8" y2="673.6" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="586.9" y1="769.2" x2="555.8" y2="745.3" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="556.4" y1="745.8" x2="531.6" y2="726.8" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="558.4" y1="818.5" x2="522.2" y2="803.5" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="522.9" y1="803.8" x2="494.1" y2="791.8" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="543.7" y1="873.5" x2="504.8" y2="868.4" stroke="#8f7f63" stroke-width="0.8"/>
+<line x1="505.5" y1="868.5" x2="474.6" y2="864.4" stroke="#8f7f63" stroke-width="0.8"/>
+<path d="M 727.6,644.0 L 724.0,568.0 L 796.0,568.0 L 792.4,644.0 Z" fill="#ddd0b8" stroke="#4a4238" stroke-width="1.2"/>
+<line x1="737.8" y1="606.0" x2="782.6" y2="606.0" stroke="#8f7f63" stroke-width="0.8"/>
+<rect x="276.2" y="874.4" width="264.0" height="28.0" fill="#beb096" stroke="#4a4238" stroke-width="0.8"/>
+<rect x="980.2" y="874.4" width="264.0" height="28.0" fill="#beb096" stroke="#4a4238" stroke-width="0.8"/>
+<rect x="440.2" y="1081.6" width="80.0" height="220.0" fill="#b5a68b" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="1000.2" y="1081.6" width="80.0" height="220.0" fill="#b5a68b" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="446.2" y="1061.6" width="68.0" height="20.0" fill="#ddd0b8" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="1006.2" y="1061.6" width="68.0" height="20.0" fill="#ddd0b8" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="454.2" y="749.2" width="52.0" height="312.0" fill="#ddd0b8" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="1014.2" y="749.2" width="52.0" height="312.0" fill="#ddd0b8" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="450.2" y="737.6" width="60.0" height="12.0" fill="#ddd0b8" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="1010.2" y="737.6" width="60.0" height="12.0" fill="#ddd0b8" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="442.2" y="705.2" width="76.0" height="32.0" fill="#ddd0b8" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="1002.2" y="705.2" width="76.0" height="32.0" fill="#ddd0b8" stroke="#4a4238" stroke-width="0.9"/>
+<line x1="467.4" y1="620.0" x2="467.4" y2="515.2" stroke="#b8a98d" stroke-width="0.9"/>
+<line x1="480.2" y1="620.0" x2="480.2" y2="515.2" stroke="#b8a98d" stroke-width="0.9"/>
+<line x1="493.0" y1="620.0" x2="493.0" y2="515.2" stroke="#b8a98d" stroke-width="0.9"/>
+<line x1="506.2" y1="505.6" x2="506.2" y2="629.6" stroke="#a08f73" stroke-width="1.6"/>
+<line x1="1027.4" y1="620.0" x2="1027.4" y2="515.2" stroke="#b8a98d" stroke-width="0.9"/>
+<line x1="1040.2" y1="620.0" x2="1040.2" y2="515.2" stroke="#b8a98d" stroke-width="0.9"/>
+<line x1="1053.0" y1="620.0" x2="1053.0" y2="515.2" stroke="#b8a98d" stroke-width="0.9"/>
+<line x1="1066.2" y1="505.6" x2="1066.2" y2="629.6" stroke="#a08f73" stroke-width="1.6"/>
+<rect x="346.6" y="672.8" width="51.2" height="50.4" fill="#e9e6df" stroke="#4a4238" stroke-width="0.8"/>
+<line x1="372.2" y1="723.2" x2="372.2" y2="672.8" stroke="#b8ad9c" stroke-width="0.6"/>
+<line x1="346.6" y1="698.0" x2="397.8" y2="698.0" stroke="#b8ad9c" stroke-width="0.6"/>
+<rect x="1122.6" y="672.8" width="51.2" height="50.4" fill="#e9e6df" stroke="#4a4238" stroke-width="0.8"/>
+<line x1="1148.2" y1="723.2" x2="1148.2" y2="672.8" stroke="#b8ad9c" stroke-width="0.6"/>
+<line x1="1122.6" y1="698.0" x2="1173.8" y2="698.0" stroke="#b8ad9c" stroke-width="0.6"/>
+<rect x="280.2" y="469.6" width="960.0" height="36.0" fill="#beb096" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="276.2" y="425.6" width="968.0" height="44.0" fill="#b3a389" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="1153.8" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="1112.2" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="1070.6" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="1029.0" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="987.4" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="945.8" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="904.2" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="862.6" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="821.0" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="779.4" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="737.8" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="696.2" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="654.6" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="613.0" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="571.4" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="529.8" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="488.2" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="446.6" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="405.0" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="363.4" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="321.8" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="280.2" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="1237.0" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="1195.4" y="382.0" width="24.0" height="22.4" fill="#a4947a" stroke="#93836a" stroke-width="0.5"/>
+<rect x="252.2" y="375.2" width="1016.0" height="28.0" fill="#9a8a70" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="264.2" y="367.6" width="992.0" height="8.0" fill="#8f7f63" stroke="#4a4238" stroke-width="0.9"/>
+<line x1="252.2" y1="403.2" x2="1268.2" y2="403.2" stroke="#7d6e57" stroke-width="1.2"/>
+<rect x="312.2" y="222.0" width="896.0" height="145.6" fill="#cfc0a6" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="613.0" y="235.6" width="294.4" height="-26890.4" fill="#ddd0b8" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="628.2" y="250.8" width="264.0" height="-26920.8" fill="#b9a88c" stroke="#4a4238" stroke-width="0.7"/>
+<line x1="650.6" y1="-26690.8" x2="869.8" y2="-26690.8" stroke="#a89a7f" stroke-width="0.7"/>
+<line x1="650.6" y1="-13209.6" x2="869.8" y2="-13209.6" stroke="#a89a7f" stroke-width="0.7"/>
+<line x1="650.6" y1="271.6" x2="869.8" y2="271.6" stroke="#a89a7f" stroke-width="0.7"/>
+<rect x="296.2" y="198.0" width="928.0" height="24.0" fill="#9a8a70" stroke="#4a4238" stroke-width="0.9"/>
+<rect x="308.2" y="190.0" width="904.0" height="8.0" fill="#8f7f63" stroke="#4a4238" stroke-width="0.6"/>
+<rect x="673.8" y="110.0" width="172.8" height="56.0" fill="#3d665a" stroke="#4a4238" stroke-width="0.9"/>
+<line x1="846.6" y1="166.0" x2="760.0" y2="110.0" stroke="#4a7a6a" stroke-width="4" stroke-linecap="round"/>
+<line x1="673.4" y1="166.0" x2="760.0" y2="110.0" stroke="#4a7a6a" stroke-width="4" stroke-linecap="round"/>
+<rect x="667.4" y="162.0" width="185.6" height="8.0" fill="#4a7a6a" stroke="#4a4238" stroke-width="0.6"/>
+<rect x="356.2" y="92.8" width="40.0" height="36.0" fill="#8e2438" stroke="#4a4238" stroke-width="0.8"/>
+<line x1="376.2" y1="128.8" x2="376.2" y2="154.8" stroke="#6b5a44" stroke-width="1.0"/>
+<rect x="1124.2" y="92.8" width="40.0" height="36.0" fill="#8e2438" stroke="#4a4238" stroke-width="0.8"/>
+<line x1="1144.2" y1="128.8" x2="1144.2" y2="154.8" stroke="#6b5a44" stroke-width="1.0"/>
+<path d="M 760.2,80.0 L 745.8,92.8 L 774.6,92.8 Z" fill="#8e2438" stroke="#4a4238" stroke-width="0.7"/>
+<line x1="284.2" y1="479.6" x2="284.2" y2="353.2" stroke="#6b5a44" stroke-width="1.5"/>
+<path d="M 284.2,355.6 L 325.8,368.4 L 284.2,381.2 Z" fill="#8e2438" stroke="#4a4238" stroke-width="0.6"/>
+<line x1="1236.2" y1="479.6" x2="1236.2" y2="353.2" stroke="#6b5a44" stroke-width="1.5"/>
+<path d="M 1236.2,355.6 L 1277.8,368.4 L 1236.2,381.2 Z" fill="#8e2438" stroke="#4a4238" stroke-width="0.6"/>
+<line x1="244.0" y1="1358.0" x2="1276.0" y2="1358.0" stroke="#999080" stroke-width="0.9"/>
+<line x1="240.0" y1="1362.0" x2="248.0" y2="1354.0" stroke="#999080" stroke-width="0.9"/>
+<line x1="1272.0" y1="1362.0" x2="1280.0" y2="1354.0" stroke="#999080" stroke-width="0.9"/>
+<text x="760.0" y="1353.0" font-size="10" text-anchor="middle" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">12.90 m (台阶总宽)</text>
+<line x1="979.8" y1="1386.0" x2="540.2" y2="1386.0" stroke="#999080" stroke-width="0.9"/>
+<line x1="975.8" y1="1390.0" x2="983.8" y2="1382.0" stroke="#999080" stroke-width="0.9"/>
+<line x1="536.2" y1="1390.0" x2="544.2" y2="1382.0" stroke="#999080" stroke-width="0.9"/>
+<text x="760.0" y="1381.0" font-size="9.5" text-anchor="middle" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">-5.50 m (门洞净宽)</text>
+<line x1="1320.0" y1="1330.0" x2="1320.0" y2="56.0" stroke="#999080" stroke-width="0.9"/>
+<line x1="1315.0" y1="1330.0" x2="1325.0" y2="1330.0" stroke="#999080" stroke-width="0.9"/>
+<text x="1330.0" y="1333.0" font-size="8" text-anchor="start" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">0.00  地面</text>
+<line x1="1315.0" y1="1272.4" x2="1325.0" y2="1272.4" stroke="#999080" stroke-width="0.9"/>
+<text x="1330.0" y="1275.4" font-size="8" text-anchor="start" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">0.72  台面</text>
+<line x1="1315.0" y1="902.0" x2="1325.0" y2="902.0" stroke="#999080" stroke-width="0.9"/>
+<text x="1330.0" y="905.0" font-size="8" text-anchor="start" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">5.35  起拱线</text>
+<line x1="1315.0" y1="686.2" x2="1325.0" y2="686.2" stroke="#999080" stroke-width="0.9"/>
+<text x="1330.0" y="689.2" font-size="8" text-anchor="start" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">8.05  拱冠内顶</text>
+<line x1="1315.0" y1="505.6" x2="1325.0" y2="505.6" stroke="#999080" stroke-width="0.9"/>
+<text x="1330.0" y="508.6" font-size="8" text-anchor="start" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">10.30  檐底</text>
+<line x1="1315.0" y1="367.6" x2="1325.0" y2="367.6" stroke="#999080" stroke-width="0.9"/>
+<text x="1330.0" y="370.6" font-size="8" text-anchor="start" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">12.03  檐顶</text>
+<line x1="1315.0" y1="198.0" x2="1325.0" y2="198.0" stroke="#999080" stroke-width="0.9"/>
+<text x="1330.0" y="201.0" font-size="8" text-anchor="start" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">14.15  阁楼顶</text>
+<line x1="1315.0" y1="80.0" x2="1325.0" y2="80.0" stroke="#999080" stroke-width="0.9"/>
+<text x="1330.0" y="83.0" font-size="8" text-anchor="start" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">15.62  脊顶</text>
+<line x1="200.0" y1="1298.0" x2="232.0" y2="1298.0" stroke="#999080" stroke-width="0.8" stroke-dasharray="3,3"/>
+<circle cx="232.0" cy="1298.0" r="2.2" fill="#999080"/>
+<text x="194.0" y="1301.5" font-size="9.5" text-anchor="end" fill="#2b2b2b" font-family="Microsoft YaHei, sans-serif">① 基座层 (4件)</text>
+<line x1="200.0" y1="1086.8" x2="232.0" y2="1086.8" stroke="#999080" stroke-width="0.8" stroke-dasharray="3,3"/>
+<circle cx="232.0" cy="1086.8" r="2.2" fill="#999080"/>
+<text x="194.0" y="1090.3" font-size="9.5" text-anchor="end" fill="#2b2b2b" font-family="Microsoft YaHei, sans-serif">② 墩身层·柱式 (34件)</text>
+<line x1="200.0" y1="790.0" x2="232.0" y2="790.0" stroke="#999080" stroke-width="0.8" stroke-dasharray="3,3"/>
+<circle cx="232.0" cy="790.0" r="2.2" fill="#999080"/>
+<text x="194.0" y="793.5" font-size="9.5" text-anchor="end" fill="#2b2b2b" font-family="Microsoft YaHei, sans-serif">③ 拱券层 (139件)</text>
+<line x1="200.0" y1="425.6" x2="232.0" y2="425.6" stroke="#999080" stroke-width="0.8" stroke-dasharray="3,3"/>
+<circle cx="232.0" cy="425.6" r="2.2" fill="#999080"/>
+<text x="194.0" y="429.1" font-size="9.5" text-anchor="end" fill="#2b2b2b" font-family="Microsoft YaHei, sans-serif">④ 檐部层 (56件)</text>
+<line x1="200.0" y1="294.8" x2="232.0" y2="294.8" stroke="#999080" stroke-width="0.8" stroke-dasharray="3,3"/>
+<circle cx="232.0" cy="294.8" r="2.2" fill="#999080"/>
+<text x="194.0" y="298.3" font-size="9.5" text-anchor="end" fill="#2b2b2b" font-family="Microsoft YaHei, sans-serif">⑤ 阁楼层 (23件)</text>
+<line x1="200.0" y1="112.0" x2="232.0" y2="112.0" stroke="#999080" stroke-width="0.8" stroke-dasharray="3,3"/>
+<circle cx="232.0" cy="112.0" r="2.2" fill="#999080"/>
+<text x="194.0" y="115.5" font-size="9.5" text-anchor="end" fill="#2b2b2b" font-family="Microsoft YaHei, sans-serif">⑥ 屋顶+旗 (6件)</text>
+<line x1="392.0" y1="1086.8" x2="200.0" y2="1100.8" stroke="#999080" stroke-width="0.7"/>
+<circle cx="392.0" cy="1086.8" r="2" fill="#999080"/>
+<text x="200.0" y="1103.8" font-size="8" text-anchor="end" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">墩身贴皮 石质墙壁20001337</text>
+<line x1="86424.0" y1="765.2" x2="86464.0" y2="725.2" stroke="#999080" stroke-width="0.7"/>
+<circle cx="86424.0" cy="765.2" r="2" fill="#999080"/>
+<text x="86464.0" y="728.2" font-size="8" text-anchor="start" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">半柱五段 白盒10009001/10009008</text>
+<line x1="1048.3" y1="854.0" x2="1096.3" y2="886.0" stroke="#999080" stroke-width="0.7"/>
+<circle cx="1048.3" cy="854.0" r="2" fill="#999080"/>
+<text x="1096.3" y="889.0" font-size="8" text-anchor="start" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">券石×48+外圈饰×72</text>
+<line x1="796.2" y1="574.0" x2="832.2" y2="546.0" stroke="#999080" stroke-width="0.7"/>
+<circle cx="796.2" cy="574.0" r="2" fill="#999080"/>
+<text x="832.2" y="549.0" font-size="8" text-anchor="start" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">拱心石(凸出)</text>
+<line x1="1237.0" y1="393.2" x2="1309.0" y2="399.2" stroke="#999080" stroke-width="0.7"/>
+<circle cx="1237.0" cy="393.2" r="2" fill="#999080"/>
+<text x="1309.0" y="402.2" font-size="8" text-anchor="start" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">齿饰块×48</text>
+<line x1="604.2" y1="250.8" x2="564.2" y2="240.8" stroke="#999080" stroke-width="0.7"/>
+<circle cx="604.2" cy="250.8" r="2" fill="#999080"/>
+<text x="564.2" y="243.8" font-size="8" text-anchor="end" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">铭文碑板(凹色)</text>
+<line x1="856.0" y1="110.0" x2="896.0" y2="104.0" stroke="#999080" stroke-width="0.7"/>
+<circle cx="856.0" cy="110.0" r="2" fill="#999080"/>
+<text x="896.0" y="107.0" font-size="8" text-anchor="start" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">瓦坡20002120(本色)</text>
+<line x1="372.2" y1="672.8" x2="324.2" y2="694.8" stroke="#999080" stroke-width="0.7"/>
+<circle cx="372.2" cy="672.8" r="2" fill="#999080"/>
+<text x="324.2" y="697.8" font-size="8" text-anchor="end" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">卫室窗20002154</text>
+<rect x="90.0" y="1464.0" width="18" height="11" fill="#cfc0a6" stroke="#4a4238" stroke-width="0.7"/>
+<text x="114.0" y="1473.5" font-size="8.5" text-anchor="start" fill="#2b2b2b" font-family="Microsoft YaHei, sans-serif">墙体·墩身/拱上墙</text>
+<rect x="230.0" y="1464.0" width="18" height="11" fill="#b9a88c" stroke="#4a4238" stroke-width="0.7"/>
+<text x="254.0" y="1473.5" font-size="8.5" text-anchor="start" fill="#2b2b2b" font-family="Microsoft YaHei, sans-serif">凹入·贴皮</text>
+<rect x="370.0" y="1464.0" width="18" height="11" fill="#a89878" stroke="#4a4238" stroke-width="0.7"/>
+<text x="394.0" y="1473.5" font-size="8.5" text-anchor="start" fill="#2b2b2b" font-family="Microsoft YaHei, sans-serif">拱券带</text>
+<rect x="510.0" y="1464.0" width="18" height="11" fill="#ddd0b8" stroke="#4a4238" stroke-width="0.7"/>
+<text x="534.0" y="1473.5" font-size="8.5" text-anchor="start" fill="#2b2b2b" font-family="Microsoft YaHei, sans-serif">半柱·凸出件</text>
+<rect x="650.0" y="1464.0" width="18" height="11" fill="#9a8a70" stroke="#4a4238" stroke-width="0.7"/>
+<text x="674.0" y="1473.5" font-size="8.5" text-anchor="start" fill="#2b2b2b" font-family="Microsoft YaHei, sans-serif">檐部·齿饰</text>
+<rect x="790.0" y="1464.0" width="18" height="11" fill="#4a7a6a" stroke="#4a4238" stroke-width="0.7"/>
+<text x="814.0" y="1473.5" font-size="8.5" text-anchor="start" fill="#2b2b2b" font-family="Microsoft YaHei, sans-serif">瓦坡屋顶</text>
+<rect x="930.0" y="1464.0" width="18" height="11" fill="#8e2438" stroke="#4a4238" stroke-width="0.7"/>
+<text x="954.0" y="1473.5" font-size="8.5" text-anchor="start" fill="#2b2b2b" font-family="Microsoft YaHei, sans-serif">旗·脊饰</text>
+<text x="90.0" y="1494.0" font-size="8.5" text-anchor="start" fill="#7a7a7a" font-family="Microsoft YaHei, sans-serif">A+B 工艺: 白盒骨架(10009001/10009008/10009006) + 石纹贴皮切片(20001337/20001335/20002158) + 本色件(窗/瓦/旗) ｜ generated by archdraw</text>
+<text x="1430.0" y="1520.0" font-size="8" text-anchor="end" fill="#b0a89a" font-family="Microsoft YaHei, sans-serif">archdraw · 千星奇域</text>
+</svg>

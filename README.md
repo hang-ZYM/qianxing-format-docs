@@ -88,6 +88,7 @@
 
 | 版本 | 日期 | 内容 |
 |---|---|---|
+| v1.7.3 | 10-05 | **实体 BOM 工作流**：[docs/29](docs/29_实体BOM工作流与反向提取.md) + `src/gia_extract.py`（.gia 反向提取）+ `src/archdraw.py`（BOM→施工图）+ `examples/`（266 件凯旋门定版 BOM 与四图） |
 | v1.7.2 | 10-04 | 新增 [docs/28_验证方法与发现](docs/28_验证方法与发现.md)（方法与结论层） |
 | v1.7.1 | 10-04 | 新增 [docs/00_总览](docs/00_总览.md)（阅读入口：平台全景/四通道/三层验证） |
 | [v1.7](https://github.com/hang-ZYM/qianxing-format-docs/releases/tag/v1.7) | 10-04 | **manuals/ 手册层**（22 册为 AI 读者设计）+ 27 卷勘误回写（8 处）+ 14 处术语规范化 |

@@ -1,0 +1,8033 @@
+{
+ "meta": {
+  "name": "凯旋门 · 圣地（Triumphal Arch, user-final version）",
+  "version": "v6U",
+  "date": "2026-10-05",
+  "changes_v6": [
+   "内圈48块(3.75°步进): 弦差1.5mm 视觉平滑",
+   "外圈36块/面(5°步进)",
+   "全环统一tier2染色: 环带读成整雕带, 砌缝=装饰",
+   "零碰撞(空气墙判例: 碰撞盒被实体scale二次放大)"
+  ],
+  "coordinate_system": "原点=门中心地面; +X=东(立面横向); +Y=上; +Z=南(正立面朝向=通行方向); position=构件几何中心(米); rotation=度; scale=(sx,sy,sz)乘以资产原生尺寸",
+  "color_recipe": "color=[rgb24, alpha, blend] V3染色(synth口径); alpha=覆盖浓度; null=本色不染",
+  "tiers": {
+   "1": {
+    "hex": "0xD8D0C0",
+    "rgb24": 14209216,
+    "alpha": 21,
+    "name": "①最亮 檐口/线脚/柱头/拱心石/脊饰"
+   },
+   "2": {
+    "hex": "0xD0C8B8",
+    "rgb24": 13682872,
+    "alpha": 24,
+    "name": "②亮 凸出带/外圈券环/齿饰"
+   },
+   "3": {
+    "hex": "0xC8C0B0",
+    "rgb24": 13156528,
+    "alpha": 24,
+    "name": "③中 主平面/墩身/柱身"
+   },
+   "4": {
+    "hex": "0xB8B0A0",
+    "rgb24": 12103840,
+    "alpha": 32,
+    "name": "④暗 贴皮/券石/内衬"
+   },
+   "5": {
+    "hex": "0xA8A090",
+    "rgb24": 11051152,
+    "alpha": 32,
+    "name": "⑤暗 基座台阶(降档)"
+   }
+  },
+  "assets": {
+   "10009001": "白盒·长方体(原生1x1x1m)",
+   "10009008": "白盒·圆柱(原生D1x1m)",
+   "10009006": "白盒·三棱锥(原生1x1x1m)",
+   "20001337": "石质墙壁 2.5x0.4x5.0 (石纹)",
+   "20001335": "石质墙壁 2.5x0.4x2.0 (石纹)",
+   "20001377": "含窗木墙 2.5x0.4x5.0 (深木窗板)",
+   "20002154": "玻璃窗户 2.5x0.5x4.1",
+   "20002158": "石质墙体组件 5.0x0.4x0.9 (精细石)",
+   "20002120": "瓦片屋顶 5.0x5.0x0.2 (蓝绿瓦)",
+   "20001316": "石质横梁 5.0x0.5x0.5 (精细石)",
+   "20002088": "旗帜 (原色)"
+  },
+  "layer_counts": {
+   "基座层": 4,
+   "墩身层": 34,
+   "拱券层": 139,
+   "檐部层": 56,
+   "阁楼层": 23,
+   "屋顶层": 6,
+   "旗帜": 4
+  },
+  "total": 266,
+  "key_dimensions": {
+   "总宽(墙/台阶)": "12.1/12.9",
+   "总高(脊饰顶)": 15.63,
+   "结构高(屋面线)": 14.2,
+   "进深(墙/台阶)": "3.2/5.0",
+   "门洞净宽": 5.45,
+   "起拱线": 5.35,
+   "拱冠净高": 8.1,
+   "券环半径": "内2.98/外3.40(圆心=起拱线)",
+   "每圈块数": {
+    "内圈": 48,
+    "外圈每面": 36
+   },
+   "宽高比": 0.83,
+   "洞口高宽比": 1.49
+  },
+  "source": "editor-exported .gia (266 entities), reverse-extracted via gia_extract",
+  "user_edits": {
+   "summary": "整体平移归零; 角旗x4 -1.31m; 横饰带贴皮x4 1.1->1.2; 脊梁+0.02"
+  },
+  "note": "示例资产: 由 archdraw 生成四张施工图; asset_id 见 docs/08"
+ },
+ "parts": [
+  {
+   "id": 1,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": -1.168,
+    "y": 11.71,
+    "z": -1.614
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 2,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": -0.648,
+    "y": 11.71,
+    "z": -1.614
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 3,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": -1.688,
+    "y": 11.71,
+    "z": -1.614
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 4,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": -2.208,
+    "y": 11.71,
+    "z": -1.614
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 5,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": -2.728,
+    "y": 11.71,
+    "z": -1.614
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 6,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": -3.248,
+    "y": 11.71,
+    "z": -1.614
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 7,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    12.7,
+    0.35,
+    3.5
+   ],
+   "position": {
+    "x": 0.002,
+    "y": 11.76,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    14209216,
+    21,
+    null
+   ],
+   "color_tier": 1,
+   "texture": null,
+   "role": "大檐口(出挑0.3)",
+   "_user_edit": null
+  },
+  {
+   "id": 8,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    12.4,
+    0.1,
+    3.35
+   ],
+   "position": {
+    "x": 0.002,
+    "y": 11.98,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    14209216,
+    21,
+    null
+   ],
+   "color_tier": 1,
+   "texture": null,
+   "role": "檐口盖线",
+   "_user_edit": null
+  },
+  {
+   "id": 9,
+   "layer": "屋顶层",
+   "asset_id": 20002120,
+   "asset_name": "瓦片屋顶",
+   "scale": [
+    2.14,
+    1.0,
+    0.37
+   ],
+   "position": {
+    "x": 0.002,
+    "y": 14.62,
+    "z": -0.904
+   },
+   "rotation": {
+    "x": -17.0,
+    "y": 0,
+    "z": 0
+   },
+   "color": null,
+   "color_tier": 0,
+   "texture": "瓦纹",
+   "role": "蓝绿瓦坡(本色)",
+   "_user_edit": null
+  },
+  {
+   "id": 10,
+   "layer": "阁楼层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    11.6,
+    0.3,
+    3.1
+   ],
+   "position": {
+    "x": 0.002,
+    "y": 14.0,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    14209216,
+    21,
+    null
+   ],
+   "color_tier": 1,
+   "texture": null,
+   "role": "阁楼压条(出挑0.2)",
+   "_user_edit": null
+  },
+  {
+   "id": 11,
+   "layer": "阁楼层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    3.7,
+    0.14,
+    0.14
+   ],
+   "position": {
+    "x": 0.002,
+    "y": 13.61,
+    "z": -1.504
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    14209216,
+    21,
+    null
+   ],
+   "color_tier": 1,
+   "texture": null,
+   "role": "碑框上",
+   "_user_edit": null
+  },
+  {
+   "id": 12,
+   "layer": "旗帜",
+   "asset_id": 20002088,
+   "asset_name": "旗帜",
+   "scale": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "position": {
+    "x": -5.948,
+    "y": 11.96,
+    "z": -1.554
+   },
+   "rotation": {
+    "x": 0,
+    "y": 180.0,
+    "z": 0
+   },
+   "color": null,
+   "color_tier": 0,
+   "texture": null,
+   "role": "大檐口角旗(本色)",
+   "_user_edit": 1.31
+  },
+  {
+   "id": 13,
+   "layer": "墩身层",
+   "asset_id": 20001377,
+   "asset_name": "含窗木墙",
+   "scale": [
+    1.28,
+    0.93,
+    0.13
+   ],
+   "position": {
+    "x": -6.078,
+    "y": 3.04,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 90.0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "窗形·木",
+   "role": "侧立面木窗板(暗龛)",
+   "_user_edit": null
+  },
+  {
+   "id": 14,
+   "layer": "墩身层",
+   "asset_id": 20001337,
+   "asset_name": "石质墙壁",
+   "scale": [
+    1.32,
+    0.93,
+    0.13
+   ],
+   "position": {
+    "x": -4.398,
+    "y": 3.04,
+    "z": -1.644
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "石纹",
+   "role": "墩身贴皮(南/北面)",
+   "_user_edit": null
+  },
+  {
+   "id": 15,
+   "layer": "墩身层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    3.3,
+    4.63,
+    3.2
+   ],
+   "position": {
+    "x": -4.398,
+    "y": 3.04,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13156528,
+    24,
+    null
+   ],
+   "color_tier": 3,
+   "texture": null,
+   "role": "墩芯骨架",
+   "_user_edit": null
+  },
+  {
+   "id": 16,
+   "layer": "墩身层",
+   "asset_id": 10009008,
+   "asset_name": "白盒·圆柱",
+   "scale": [
+    0.65,
+    3.9,
+    0.65
+   ],
+   "position": {
+    "x": -3.498,
+    "y": 5.31,
+    "z": -1.754
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13156528,
+    24,
+    null
+   ],
+   "color_tier": 3,
+   "texture": null,
+   "role": "半柱柱身",
+   "_user_edit": null
+  },
+  {
+   "id": 17,
+   "layer": "墩身层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.75,
+    0.15,
+    0.75
+   ],
+   "position": {
+    "x": -3.498,
+    "y": 7.33,
+    "z": -1.754
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "柱颈带",
+   "_user_edit": null
+  },
+  {
+   "id": 18,
+   "layer": "墩身层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.95,
+    0.4,
+    0.95
+   ],
+   "position": {
+    "x": -3.498,
+    "y": 7.61,
+    "z": -1.754
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    14209216,
+    21,
+    null
+   ],
+   "color_tier": 1,
+   "texture": null,
+   "role": "柱头",
+   "_user_edit": null
+  },
+  {
+   "id": 19,
+   "layer": "墩身层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    3.35,
+    0.1,
+    3.4
+   ],
+   "position": {
+    "x": -4.398,
+    "y": 5.8,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "起拱带盖线",
+   "_user_edit": null
+  },
+  {
+   "id": 20,
+   "layer": "墩身层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    3.3,
+    0.35,
+    3.35
+   ],
+   "position": {
+    "x": -4.398,
+    "y": 5.52,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "起拱横带(impost)",
+   "_user_edit": null
+  },
+  {
+   "id": 21,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": 1.432,
+    "y": 11.71,
+    "z": -1.614
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 22,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": 0.912,
+    "y": 11.71,
+    "z": -1.614
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 23,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": 0.392,
+    "y": 11.71,
+    "z": -1.614
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 24,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": -0.128,
+    "y": 11.71,
+    "z": -1.614
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 25,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": -3.768,
+    "y": 11.71,
+    "z": -1.614
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 26,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": -4.288,
+    "y": 11.71,
+    "z": -1.614
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 27,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": -4.808,
+    "y": 11.71,
+    "z": -1.614
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 28,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": -5.328,
+    "y": 11.71,
+    "z": -1.614
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 29,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": -5.848,
+    "y": 11.71,
+    "z": -1.614
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 30,
+   "layer": "阁楼层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    11.2,
+    1.82,
+    2.8
+   ],
+   "position": {
+    "x": 0.002,
+    "y": 12.94,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13156528,
+    24,
+    null
+   ],
+   "color_tier": 3,
+   "texture": null,
+   "role": "阁楼芯体",
+   "_user_edit": null
+  },
+  {
+   "id": 31,
+   "layer": "阁楼层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    11.3,
+    0.1,
+    2.9
+   ],
+   "position": {
+    "x": 0.002,
+    "y": 14.2,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    14209216,
+    21,
+    null
+   ],
+   "color_tier": 1,
+   "texture": null,
+   "role": "阁楼压条盖线",
+   "_user_edit": null
+  },
+  {
+   "id": 32,
+   "layer": "阁楼层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.14,
+    1.48,
+    0.14
+   ],
+   "position": {
+    "x": -1.788,
+    "y": 12.94,
+    "z": -1.504
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    14209216,
+    21,
+    null
+   ],
+   "color_tier": 1,
+   "texture": null,
+   "role": "碑框边",
+   "_user_edit": null
+  },
+  {
+   "id": 33,
+   "layer": "阁楼层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.14,
+    1.48,
+    0.14
+   ],
+   "position": {
+    "x": 1.792,
+    "y": 12.94,
+    "z": -1.504
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    14209216,
+    21,
+    null
+   ],
+   "color_tier": 1,
+   "texture": null,
+   "role": "碑框边",
+   "_user_edit": null
+  },
+  {
+   "id": 34,
+   "layer": "阁楼层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    3.7,
+    0.14,
+    0.14
+   ],
+   "position": {
+    "x": 0.002,
+    "y": 12.27,
+    "z": -1.504
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    14209216,
+    21,
+    null
+   ],
+   "color_tier": 1,
+   "texture": null,
+   "role": "碑框下",
+   "_user_edit": null
+  },
+  {
+   "id": 35,
+   "layer": "阁楼层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    3.3,
+    1.1,
+    0.06
+   ],
+   "position": {
+    "x": 0.002,
+    "y": 12.94,
+    "z": -1.494
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": null,
+   "role": "铭文碑板(凹色)",
+   "_user_edit": null
+  },
+  {
+   "id": 36,
+   "layer": "阁楼层",
+   "asset_id": 20001335,
+   "asset_name": "石质墙壁",
+   "scale": [
+    1.12,
+    0.91,
+    0.13
+   ],
+   "position": {
+    "x": -5.628,
+    "y": 12.94,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 90.0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "石纹",
+   "role": "阁楼贴皮(东/西面)",
+   "_user_edit": null
+  },
+  {
+   "id": 37,
+   "layer": "阁楼层",
+   "asset_id": 20001335,
+   "asset_name": "石质墙壁",
+   "scale": [
+    1.12,
+    0.91,
+    0.13
+   ],
+   "position": {
+    "x": 4.202,
+    "y": 12.94,
+    "z": -1.434
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "石纹",
+   "role": "阁楼贴皮(南/北面)",
+   "_user_edit": null
+  },
+  {
+   "id": 38,
+   "layer": "阁楼层",
+   "asset_id": 20001335,
+   "asset_name": "石质墙壁",
+   "scale": [
+    1.12,
+    0.91,
+    0.13
+   ],
+   "position": {
+    "x": 1.402,
+    "y": 12.94,
+    "z": -1.434
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "石纹",
+   "role": "阁楼贴皮(南/北面)",
+   "_user_edit": null
+  },
+  {
+   "id": 39,
+   "layer": "阁楼层",
+   "asset_id": 20001335,
+   "asset_name": "石质墙壁",
+   "scale": [
+    1.12,
+    0.91,
+    0.13
+   ],
+   "position": {
+    "x": -1.398,
+    "y": 12.94,
+    "z": -1.434
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "石纹",
+   "role": "阁楼贴皮(南/北面)",
+   "_user_edit": null
+  },
+  {
+   "id": 40,
+   "layer": "阁楼层",
+   "asset_id": 20001335,
+   "asset_name": "石质墙壁",
+   "scale": [
+    1.12,
+    0.91,
+    0.13
+   ],
+   "position": {
+    "x": -4.198,
+    "y": 12.94,
+    "z": -1.434
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "石纹",
+   "role": "阁楼贴皮(南/北面)",
+   "_user_edit": null
+  },
+  {
+   "id": 41,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    6.5,
+    1.55,
+    3.0
+   ],
+   "position": {
+    "x": 0.002,
+    "y": 9.53,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13156528,
+    24,
+    null
+   ],
+   "color_tier": 3,
+   "texture": null,
+   "role": "拱肩中央墙(凹入)",
+   "_user_edit": null
+  },
+  {
+   "id": 42,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    3.3,
+    4.95,
+    3.2
+   ],
+   "position": {
+    "x": -4.398,
+    "y": 7.82,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13156528,
+    24,
+    null
+   ],
+   "color_tier": 3,
+   "texture": null,
+   "role": "拱上侧墙",
+   "_user_edit": null
+  },
+  {
+   "id": 43,
+   "layer": "拱券层",
+   "asset_id": 20001337,
+   "asset_name": "石质墙壁",
+   "scale": [
+    1.32,
+    0.99,
+    0.13
+   ],
+   "position": {
+    "x": -4.398,
+    "y": 7.82,
+    "z": -1.644
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "石纹",
+   "role": "拱上墙贴皮(南/北面)",
+   "_user_edit": null
+  },
+  {
+   "id": 44,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    12.1,
+    0.55,
+    3.3
+   ],
+   "position": {
+    "x": 0.002,
+    "y": 11.03,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13156528,
+    24,
+    null
+   ],
+   "color_tier": 3,
+   "texture": null,
+   "role": "横饰带体(frieze)",
+   "_user_edit": null
+  },
+  {
+   "id": 45,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    12.0,
+    0.45,
+    3.25
+   ],
+   "position": {
+    "x": 0.002,
+    "y": 10.53,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13156528,
+    24,
+    null
+   ],
+   "color_tier": 3,
+   "texture": null,
+   "role": "额枋(architrave)",
+   "_user_edit": null
+  },
+  {
+   "id": 46,
+   "layer": "拱券层",
+   "asset_id": 20002154,
+   "asset_name": "玻璃窗户",
+   "scale": [
+    0.64,
+    0.63,
+    0.1
+   ],
+   "position": {
+    "x": -4.848,
+    "y": 7.9,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": null,
+   "color_tier": 0,
+   "texture": "窗形·玻璃",
+   "role": "墩身卫室窗(本色)",
+   "_user_edit": null
+  },
+  {
+   "id": 47,
+   "layer": "拱券层",
+   "asset_id": 20001337,
+   "asset_name": "石质墙壁",
+   "scale": [
+    1.15,
+    0.35,
+    0.13
+   ],
+   "position": {
+    "x": -1.598,
+    "y": 9.53,
+    "z": -1.484
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "石纹",
+   "role": "拱肩贴皮(凹入区)",
+   "_user_edit": null
+  },
+  {
+   "id": 48,
+   "layer": "拱券层",
+   "asset_id": 20001337,
+   "asset_name": "石质墙壁",
+   "scale": [
+    1.28,
+    0.99,
+    0.13
+   ],
+   "position": {
+    "x": -6.078,
+    "y": 7.82,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 90.0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "石纹",
+   "role": "拱上墙贴皮(东/西面)",
+   "_user_edit": null
+  },
+  {
+   "id": 49,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": -2.938,
+    "y": 5.83,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -80.6
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k46(φ=170.625°)",
+   "_user_edit": null
+  },
+  {
+   "id": 50,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": -2.968,
+    "y": 5.45,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -88.1
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k48(φ=178.125°)",
+   "_user_edit": null
+  },
+  {
+   "id": 51,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": -2.958,
+    "y": 5.64,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -84.4
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k47(φ=174.375°)",
+   "_user_edit": null
+  },
+  {
+   "id": 52,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": -2.898,
+    "y": 6.03,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -76.9
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k45(φ=166.875°)",
+   "_user_edit": null
+  },
+  {
+   "id": 53,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": -0.858,
+    "y": 8.2,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -16.9
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k29(φ=106.875°)",
+   "_user_edit": null
+  },
+  {
+   "id": 54,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": -2.848,
+    "y": 6.21,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -73.1
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k44(φ=163.125°)",
+   "_user_edit": null
+  },
+  {
+   "id": 55,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": -2.778,
+    "y": 6.4,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -69.4
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k43(φ=159.375°)",
+   "_user_edit": null
+  },
+  {
+   "id": 56,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": -2.708,
+    "y": 6.58,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -65.6
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k42(φ=155.625°)",
+   "_user_edit": null
+  },
+  {
+   "id": 57,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": -2.618,
+    "y": 6.75,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -61.9
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k41(φ=151.875°)",
+   "_user_edit": null
+  },
+  {
+   "id": 58,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": -2.528,
+    "y": 6.92,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -58.1
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k40(φ=148.125°)",
+   "_user_edit": null
+  },
+  {
+   "id": 59,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": -2.418,
+    "y": 7.08,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -54.4
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k39(φ=144.375°)",
+   "_user_edit": null
+  },
+  {
+   "id": 60,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": -2.298,
+    "y": 7.24,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -50.6
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k38(φ=140.625°)",
+   "_user_edit": null
+  },
+  {
+   "id": 61,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": -2.168,
+    "y": 7.38,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -46.9
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k37(φ=136.875°)",
+   "_user_edit": null
+  },
+  {
+   "id": 62,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": -2.028,
+    "y": 7.52,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -43.1
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k36(φ=133.125°)",
+   "_user_edit": null
+  },
+  {
+   "id": 63,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": -1.888,
+    "y": 7.65,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -39.4
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k35(φ=129.375°)",
+   "_user_edit": null
+  },
+  {
+   "id": 64,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": -1.728,
+    "y": 7.77,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -35.6
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k34(φ=125.625°)",
+   "_user_edit": null
+  },
+  {
+   "id": 65,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": -1.568,
+    "y": 7.88,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -31.9
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k33(φ=121.875°)",
+   "_user_edit": null
+  },
+  {
+   "id": 66,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": -1.398,
+    "y": 7.97,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -28.1
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k32(φ=118.125°)",
+   "_user_edit": null
+  },
+  {
+   "id": 67,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": -1.228,
+    "y": 8.06,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -24.4
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k31(φ=114.375°)",
+   "_user_edit": null
+  },
+  {
+   "id": 68,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": -1.048,
+    "y": 8.13,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -20.6
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k30(φ=110.625°)",
+   "_user_edit": null
+  },
+  {
+   "id": 69,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": -0.678,
+    "y": 8.25,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -13.1
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k28(φ=103.125°)",
+   "_user_edit": null
+  },
+  {
+   "id": 70,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": -0.478,
+    "y": 8.29,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -9.4
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k27(φ=99.375°)",
+   "_user_edit": null
+  },
+  {
+   "id": 71,
+   "layer": "墩身层",
+   "asset_id": 20001337,
+   "asset_name": "石质墙壁",
+   "scale": [
+    1.28,
+    0.93,
+    0.13
+   ],
+   "position": {
+    "x": -2.748,
+    "y": 3.04,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 90.0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "石纹",
+   "role": "门洞边梃贴皮(内衬)",
+   "_user_edit": null
+  },
+  {
+   "id": 72,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": -0.288,
+    "y": 8.31,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -5.6
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k26(φ=95.625°)",
+   "_user_edit": null
+  },
+  {
+   "id": 73,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": -0.098,
+    "y": 8.32,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -1.9
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k25(φ=91.875°)",
+   "_user_edit": null
+  },
+  {
+   "id": 74,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": 0.102,
+    "y": 8.32,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 1.9
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k24(φ=88.125°)",
+   "_user_edit": null
+  },
+  {
+   "id": 75,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": 0.292,
+    "y": 8.31,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 5.6
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k23(φ=84.375°)",
+   "_user_edit": null
+  },
+  {
+   "id": 76,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": 3.512,
+    "y": 11.71,
+    "z": -1.614
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 77,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": 2.992,
+    "y": 11.71,
+    "z": -1.614
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 78,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": 2.472,
+    "y": 11.71,
+    "z": -1.614
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 79,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": 1.952,
+    "y": 11.71,
+    "z": -1.614
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 80,
+   "layer": "旗帜",
+   "asset_id": 20002088,
+   "asset_name": "旗帜",
+   "scale": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "position": {
+    "x": 5.952,
+    "y": 11.96,
+    "z": -1.554
+   },
+   "rotation": {
+    "x": 0,
+    "y": 180.0,
+    "z": 0
+   },
+   "color": null,
+   "color_tier": 0,
+   "texture": null,
+   "role": "大檐口角旗(本色)",
+   "_user_edit": 1.31
+  },
+  {
+   "id": 81,
+   "layer": "屋顶层",
+   "asset_id": 10009006,
+   "asset_name": "白盒·三棱锥",
+   "scale": [
+    0.6,
+    0.55,
+    0.6
+   ],
+   "position": {
+    "x": 0.002,
+    "y": 15.35,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    14209216,
+    21,
+    null
+   ],
+   "color_tier": 1,
+   "texture": null,
+   "role": "中央脊饰",
+   "_user_edit": null
+  },
+  {
+   "id": 82,
+   "layer": "屋顶层",
+   "asset_id": 10009006,
+   "asset_name": "白盒·三棱锥",
+   "scale": [
+    0.5,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -4.798,
+    "y": 15.24,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    14209216,
+    21,
+    null
+   ],
+   "color_tier": 1,
+   "texture": null,
+   "role": "脊端饰(脊饰)",
+   "_user_edit": null
+  },
+  {
+   "id": 83,
+   "layer": "屋顶层",
+   "asset_id": 10009006,
+   "asset_name": "白盒·三棱锥",
+   "scale": [
+    0.5,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 4.802,
+    "y": 15.24,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    14209216,
+    21,
+    null
+   ],
+   "color_tier": 1,
+   "texture": null,
+   "role": "脊端饰(脊饰)",
+   "_user_edit": null
+  },
+  {
+   "id": 84,
+   "layer": "屋顶层",
+   "asset_id": 20002120,
+   "asset_name": "瓦片屋顶",
+   "scale": [
+    2.14,
+    1.0,
+    0.37
+   ],
+   "position": {
+    "x": 0.002,
+    "y": 14.62,
+    "z": 0.896
+   },
+   "rotation": {
+    "x": 17.0,
+    "y": 0,
+    "z": 0
+   },
+   "color": null,
+   "color_tier": 0,
+   "texture": "瓦纹",
+   "role": "蓝绿瓦坡(本色)",
+   "_user_edit": null
+  },
+  {
+   "id": 85,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.9,
+    0.95,
+    0.6
+   ],
+   "position": {
+    "x": 0.002,
+    "y": 9.05,
+    "z": -1.784
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    14209216,
+    21,
+    null
+   ],
+   "color_tier": 1,
+   "texture": null,
+   "role": "拱心石(凸出)",
+   "_user_edit": null
+  },
+  {
+   "id": 86,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -3.398,
+    "y": 5.5,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -87.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k36(φ=177.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 87,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -3.368,
+    "y": 5.79,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -82.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k35(φ=172.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 88,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -3.318,
+    "y": 6.09,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -77.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k34(φ=167.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 89,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -3.238,
+    "y": 6.37,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -72.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k33(φ=162.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 90,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -3.138,
+    "y": 6.65,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -67.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k32(φ=157.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 91,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -3.018,
+    "y": 6.92,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -62.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k31(φ=152.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 92,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -2.868,
+    "y": 7.18,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -57.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k30(φ=147.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 93,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -2.698,
+    "y": 7.42,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -52.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k29(φ=142.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 94,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -2.508,
+    "y": 7.65,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -47.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k28(φ=137.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 95,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -2.298,
+    "y": 7.86,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -42.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k27(φ=132.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 96,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -2.068,
+    "y": 8.05,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -37.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k26(φ=127.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 97,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -1.828,
+    "y": 8.22,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -32.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k25(φ=122.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 98,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -1.568,
+    "y": 8.37,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -27.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k24(φ=117.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 99,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -1.298,
+    "y": 8.49,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -22.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k23(φ=112.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 100,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -1.018,
+    "y": 8.59,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -17.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k22(φ=107.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 101,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -0.738,
+    "y": 8.67,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -12.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k21(φ=102.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 102,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -0.438,
+    "y": 8.72,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -7.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k20(φ=97.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 103,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -0.148,
+    "y": 8.75,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -2.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k19(φ=92.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 104,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 0.152,
+    "y": 8.75,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 2.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k18(φ=87.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 105,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 0.442,
+    "y": 8.72,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 7.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k17(φ=82.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 106,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 0.742,
+    "y": 8.67,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 12.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k16(φ=77.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 107,
+   "layer": "拱券层",
+   "asset_id": 20001337,
+   "asset_name": "石质墙壁",
+   "scale": [
+    1.15,
+    0.35,
+    0.13
+   ],
+   "position": {
+    "x": 1.602,
+    "y": 9.53,
+    "z": -1.484
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "石纹",
+   "role": "拱肩贴皮(凹入区)",
+   "_user_edit": null
+  },
+  {
+   "id": 108,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 1.832,
+    "y": 8.22,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 32.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k12(φ=57.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 109,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 2.072,
+    "y": 8.05,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 37.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k11(φ=52.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 110,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 1.572,
+    "y": 8.37,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 27.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k13(φ=62.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 111,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 1.302,
+    "y": 8.49,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 22.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k14(φ=67.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 112,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 1.022,
+    "y": 8.59,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 17.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k15(φ=72.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 113,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 0.742,
+    "y": 8.67,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 12.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k16(φ=77.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 114,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -3.398,
+    "y": 5.5,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -87.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k36(φ=177.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 115,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -3.368,
+    "y": 5.79,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -82.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k35(φ=172.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 116,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -3.318,
+    "y": 6.09,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -77.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k34(φ=167.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 117,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -3.238,
+    "y": 6.37,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -72.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k33(φ=162.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 118,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -3.138,
+    "y": 6.65,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -67.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k32(φ=157.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 119,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -3.018,
+    "y": 6.92,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -62.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k31(φ=152.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 120,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -2.868,
+    "y": 7.18,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -57.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k30(φ=147.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 121,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -2.698,
+    "y": 7.42,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -52.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k29(φ=142.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 122,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -2.508,
+    "y": 7.65,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -47.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k28(φ=137.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 123,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -2.298,
+    "y": 7.86,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -42.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k27(φ=132.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 124,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -2.068,
+    "y": 8.05,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -37.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k26(φ=127.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 125,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -1.828,
+    "y": 8.22,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -32.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k25(φ=122.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 126,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -1.568,
+    "y": 8.37,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -27.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k24(φ=117.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 127,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -1.298,
+    "y": 8.49,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -22.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k23(φ=112.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 128,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -1.018,
+    "y": 8.59,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -17.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k22(φ=107.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 129,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -0.738,
+    "y": 8.67,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -12.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k21(φ=102.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 130,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -0.438,
+    "y": 8.72,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -7.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k20(φ=97.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 131,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": -0.148,
+    "y": 8.75,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": -2.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k19(φ=92.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 132,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 0.152,
+    "y": 8.75,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 2.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k18(φ=87.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 133,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 0.442,
+    "y": 8.72,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 7.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k17(φ=82.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 134,
+   "layer": "旗帜",
+   "asset_id": 20002088,
+   "asset_name": "旗帜",
+   "scale": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "position": {
+    "x": -5.948,
+    "y": 11.96,
+    "z": 1.546
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": null,
+   "color_tier": 0,
+   "texture": null,
+   "role": "大檐口角旗(本色)",
+   "_user_edit": 1.31
+  },
+  {
+   "id": 135,
+   "layer": "墩身层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.85,
+    0.25,
+    0.85
+   ],
+   "position": {
+    "x": -3.498,
+    "y": 3.23,
+    "z": -1.754
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "柱基",
+   "_user_edit": null
+  },
+  {
+   "id": 136,
+   "layer": "墩身层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    1.0,
+    2.75,
+    0.8
+   ],
+   "position": {
+    "x": -3.498,
+    "y": 1.73,
+    "z": -1.754
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": null,
+   "role": "高柱座",
+   "_user_edit": null
+  },
+  {
+   "id": 137,
+   "layer": "墩身层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.95,
+    0.4,
+    0.95
+   ],
+   "position": {
+    "x": -3.498,
+    "y": 7.61,
+    "z": 1.746
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    14209216,
+    21,
+    null
+   ],
+   "color_tier": 1,
+   "texture": null,
+   "role": "柱头",
+   "_user_edit": null
+  },
+  {
+   "id": 138,
+   "layer": "墩身层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.75,
+    0.15,
+    0.75
+   ],
+   "position": {
+    "x": -3.498,
+    "y": 7.33,
+    "z": 1.746
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "柱颈带",
+   "_user_edit": null
+  },
+  {
+   "id": 139,
+   "layer": "墩身层",
+   "asset_id": 10009008,
+   "asset_name": "白盒·圆柱",
+   "scale": [
+    0.65,
+    3.9,
+    0.65
+   ],
+   "position": {
+    "x": -3.498,
+    "y": 5.31,
+    "z": 1.746
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13156528,
+    24,
+    null
+   ],
+   "color_tier": 3,
+   "texture": null,
+   "role": "半柱柱身",
+   "_user_edit": null
+  },
+  {
+   "id": 140,
+   "layer": "墩身层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.85,
+    0.25,
+    0.85
+   ],
+   "position": {
+    "x": -3.498,
+    "y": 3.23,
+    "z": 1.746
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "柱基",
+   "_user_edit": null
+  },
+  {
+   "id": 141,
+   "layer": "墩身层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    1.0,
+    2.75,
+    0.8
+   ],
+   "position": {
+    "x": -3.498,
+    "y": 1.73,
+    "z": 1.746
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": null,
+   "role": "高柱座",
+   "_user_edit": null
+  },
+  {
+   "id": 142,
+   "layer": "墩身层",
+   "asset_id": 20001337,
+   "asset_name": "石质墙壁",
+   "scale": [
+    1.32,
+    0.93,
+    0.13
+   ],
+   "position": {
+    "x": -4.398,
+    "y": 3.04,
+    "z": 1.636
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "石纹",
+   "role": "墩身贴皮(南/北面)",
+   "_user_edit": null
+  },
+  {
+   "id": 143,
+   "layer": "基座层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    12.15,
+    0.1,
+    3.6
+   ],
+   "position": {
+    "x": 0.002,
+    "y": 0.67,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "勒脚盖顶线脚",
+   "_user_edit": null
+  },
+  {
+   "id": 144,
+   "layer": "基座层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    12.1,
+    0.15,
+    3.55
+   ],
+   "position": {
+    "x": 0.002,
+    "y": 0.55,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    11051152,
+    32,
+    null
+   ],
+   "color_tier": 5,
+   "texture": null,
+   "role": "勒脚带",
+   "_user_edit": null
+  },
+  {
+   "id": 145,
+   "layer": "基座层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    12.5,
+    0.25,
+    4.7
+   ],
+   "position": {
+    "x": 0.002,
+    "y": 0.34,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    11051152,
+    32,
+    null
+   ],
+   "color_tier": 5,
+   "texture": null,
+   "role": "台阶二级(周圈)",
+   "_user_edit": null
+  },
+  {
+   "id": 146,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": 0.482,
+    "y": 8.29,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 9.4
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k22(φ=80.625°)",
+   "_user_edit": null
+  },
+  {
+   "id": 147,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": 0.682,
+    "y": 8.25,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 13.1
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k21(φ=76.875°)",
+   "_user_edit": null
+  },
+  {
+   "id": 148,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": 0.862,
+    "y": 8.2,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 16.9
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k20(φ=73.125°)",
+   "_user_edit": null
+  },
+  {
+   "id": 149,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": 1.052,
+    "y": 8.13,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 20.6
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k19(φ=69.375°)",
+   "_user_edit": null
+  },
+  {
+   "id": 150,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": 1.232,
+    "y": 8.06,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 24.4
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k18(φ=65.625°)",
+   "_user_edit": null
+  },
+  {
+   "id": 151,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": 1.402,
+    "y": 7.97,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 28.1
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k17(φ=61.875°)",
+   "_user_edit": null
+  },
+  {
+   "id": 152,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": 1.572,
+    "y": 7.88,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 31.9
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k16(φ=58.125°)",
+   "_user_edit": null
+  },
+  {
+   "id": 153,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": 1.732,
+    "y": 7.77,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 35.6
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k15(φ=54.375°)",
+   "_user_edit": null
+  },
+  {
+   "id": 154,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": 1.892,
+    "y": 7.65,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 39.4
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k14(φ=50.625°)",
+   "_user_edit": null
+  },
+  {
+   "id": 155,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 2.072,
+    "y": 8.05,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 37.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k11(φ=52.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 156,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 1.832,
+    "y": 8.22,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 32.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k12(φ=57.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 157,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": 5.072,
+    "y": 11.71,
+    "z": -1.614
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 158,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": 4.552,
+    "y": 11.71,
+    "z": -1.614
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 159,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": 4.032,
+    "y": 11.71,
+    "z": -1.614
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 160,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 1.572,
+    "y": 8.37,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 27.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k13(φ=62.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 161,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": 5.072,
+    "y": 11.71,
+    "z": 1.606
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 162,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": 4.552,
+    "y": 11.71,
+    "z": 1.606
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 163,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": 4.032,
+    "y": 11.71,
+    "z": 1.606
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 164,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": 3.512,
+    "y": 11.71,
+    "z": 1.606
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 165,
+   "layer": "阁楼层",
+   "asset_id": 20001335,
+   "asset_name": "石质墙壁",
+   "scale": [
+    1.12,
+    0.91,
+    0.13
+   ],
+   "position": {
+    "x": -4.198,
+    "y": 12.94,
+    "z": 1.426
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "石纹",
+   "role": "阁楼贴皮(南/北面)",
+   "_user_edit": null
+  },
+  {
+   "id": 166,
+   "layer": "旗帜",
+   "asset_id": 20002088,
+   "asset_name": "旗帜",
+   "scale": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "position": {
+    "x": 5.952,
+    "y": 11.96,
+    "z": 1.546
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": null,
+   "color_tier": 0,
+   "texture": null,
+   "role": "大檐口角旗(本色)",
+   "_user_edit": 1.31
+  },
+  {
+   "id": 167,
+   "layer": "阁楼层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.14,
+    1.48,
+    0.14
+   ],
+   "position": {
+    "x": -1.788,
+    "y": 12.94,
+    "z": 1.496
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    14209216,
+    21,
+    null
+   ],
+   "color_tier": 1,
+   "texture": null,
+   "role": "碑框边",
+   "_user_edit": null
+  },
+  {
+   "id": 168,
+   "layer": "阁楼层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.14,
+    1.48,
+    0.14
+   ],
+   "position": {
+    "x": 1.792,
+    "y": 12.94,
+    "z": 1.496
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    14209216,
+    21,
+    null
+   ],
+   "color_tier": 1,
+   "texture": null,
+   "role": "碑框边",
+   "_user_edit": null
+  },
+  {
+   "id": 169,
+   "layer": "阁楼层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    3.7,
+    0.14,
+    0.14
+   ],
+   "position": {
+    "x": 0.002,
+    "y": 12.27,
+    "z": 1.496
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    14209216,
+    21,
+    null
+   ],
+   "color_tier": 1,
+   "texture": null,
+   "role": "碑框下",
+   "_user_edit": null
+  },
+  {
+   "id": 170,
+   "layer": "阁楼层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    3.7,
+    0.14,
+    0.14
+   ],
+   "position": {
+    "x": 0.002,
+    "y": 13.61,
+    "z": 1.496
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    14209216,
+    21,
+    null
+   ],
+   "color_tier": 1,
+   "texture": null,
+   "role": "碑框上",
+   "_user_edit": null
+  },
+  {
+   "id": 171,
+   "layer": "阁楼层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    3.3,
+    1.1,
+    0.06
+   ],
+   "position": {
+    "x": 0.002,
+    "y": 12.94,
+    "z": 1.486
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": null,
+   "role": "铭文碑板(凹色)",
+   "_user_edit": null
+  },
+  {
+   "id": 172,
+   "layer": "阁楼层",
+   "asset_id": 20001335,
+   "asset_name": "石质墙壁",
+   "scale": [
+    1.12,
+    0.91,
+    0.13
+   ],
+   "position": {
+    "x": 5.632,
+    "y": 12.94,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 90.0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "石纹",
+   "role": "阁楼贴皮(东/西面)",
+   "_user_edit": null
+  },
+  {
+   "id": 173,
+   "layer": "阁楼层",
+   "asset_id": 20001335,
+   "asset_name": "石质墙壁",
+   "scale": [
+    1.12,
+    0.91,
+    0.13
+   ],
+   "position": {
+    "x": 4.202,
+    "y": 12.94,
+    "z": 1.426
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "石纹",
+   "role": "阁楼贴皮(南/北面)",
+   "_user_edit": null
+  },
+  {
+   "id": 174,
+   "layer": "阁楼层",
+   "asset_id": 20001335,
+   "asset_name": "石质墙壁",
+   "scale": [
+    1.12,
+    0.91,
+    0.13
+   ],
+   "position": {
+    "x": 1.402,
+    "y": 12.94,
+    "z": 1.426
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "石纹",
+   "role": "阁楼贴皮(南/北面)",
+   "_user_edit": null
+  },
+  {
+   "id": 175,
+   "layer": "阁楼层",
+   "asset_id": 20001335,
+   "asset_name": "石质墙壁",
+   "scale": [
+    1.12,
+    0.91,
+    0.13
+   ],
+   "position": {
+    "x": -1.398,
+    "y": 12.94,
+    "z": 1.426
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "石纹",
+   "role": "阁楼贴皮(南/北面)",
+   "_user_edit": null
+  },
+  {
+   "id": 176,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": 2.992,
+    "y": 11.71,
+    "z": 1.606
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 177,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": 2.472,
+    "y": 11.71,
+    "z": 1.606
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 178,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": 1.952,
+    "y": 11.71,
+    "z": 1.606
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 179,
+   "layer": "拱券层",
+   "asset_id": 20001337,
+   "asset_name": "石质墙壁",
+   "scale": [
+    1.32,
+    0.99,
+    0.13
+   ],
+   "position": {
+    "x": 4.402,
+    "y": 7.82,
+    "z": 1.636
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "石纹",
+   "role": "拱上墙贴皮(南/北面)",
+   "_user_edit": null
+  },
+  {
+   "id": 180,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    3.3,
+    4.95,
+    3.2
+   ],
+   "position": {
+    "x": 4.402,
+    "y": 7.82,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13156528,
+    24,
+    null
+   ],
+   "color_tier": 3,
+   "texture": null,
+   "role": "拱上侧墙",
+   "_user_edit": null
+  },
+  {
+   "id": 181,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.9,
+    0.95,
+    0.6
+   ],
+   "position": {
+    "x": 0.002,
+    "y": 9.05,
+    "z": 1.776
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    14209216,
+    21,
+    null
+   ],
+   "color_tier": 1,
+   "texture": null,
+   "role": "拱心石(凸出)",
+   "_user_edit": null
+  },
+  {
+   "id": 182,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 1.022,
+    "y": 8.59,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 17.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k15(φ=72.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 183,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 1.302,
+    "y": 8.49,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 22.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k14(φ=67.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 184,
+   "layer": "拱券层",
+   "asset_id": 20001337,
+   "asset_name": "石质墙壁",
+   "scale": [
+    1.32,
+    0.99,
+    0.13
+   ],
+   "position": {
+    "x": 4.402,
+    "y": 7.82,
+    "z": -1.644
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "石纹",
+   "role": "拱上墙贴皮(南/北面)",
+   "_user_edit": null
+  },
+  {
+   "id": 185,
+   "layer": "拱券层",
+   "asset_id": 20001337,
+   "asset_name": "石质墙壁",
+   "scale": [
+    1.32,
+    0.99,
+    0.13
+   ],
+   "position": {
+    "x": -4.398,
+    "y": 7.82,
+    "z": 1.636
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "石纹",
+   "role": "拱上墙贴皮(南/北面)",
+   "_user_edit": null
+  },
+  {
+   "id": 186,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": 1.432,
+    "y": 11.71,
+    "z": 1.606
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 187,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": 0.912,
+    "y": 11.71,
+    "z": 1.606
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 188,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": 0.392,
+    "y": 11.71,
+    "z": 1.606
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 189,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": -0.128,
+    "y": 11.71,
+    "z": 1.606
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 190,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": -0.648,
+    "y": 11.71,
+    "z": 1.606
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 191,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": -1.168,
+    "y": 11.71,
+    "z": 1.606
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 192,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": -1.688,
+    "y": 11.71,
+    "z": 1.606
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 193,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": -2.208,
+    "y": 11.71,
+    "z": 1.606
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 194,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": -2.728,
+    "y": 11.71,
+    "z": 1.606
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 195,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": -3.248,
+    "y": 11.71,
+    "z": 1.606
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 196,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": -3.768,
+    "y": 11.71,
+    "z": 1.606
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 197,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": -4.288,
+    "y": 11.71,
+    "z": 1.606
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 198,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": -4.808,
+    "y": 11.71,
+    "z": 1.606
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 199,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": -5.328,
+    "y": 11.71,
+    "z": 1.606
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 200,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": -5.848,
+    "y": 11.71,
+    "z": 1.606
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 201,
+   "layer": "拱券层",
+   "asset_id": 20002154,
+   "asset_name": "玻璃窗户",
+   "scale": [
+    0.64,
+    0.63,
+    0.1
+   ],
+   "position": {
+    "x": -4.848,
+    "y": 7.9,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": null,
+   "color_tier": 0,
+   "texture": "窗形·玻璃",
+   "role": "墩身卫室窗(本色)",
+   "_user_edit": null
+  },
+  {
+   "id": 202,
+   "layer": "拱券层",
+   "asset_id": 20001337,
+   "asset_name": "石质墙壁",
+   "scale": [
+    1.15,
+    0.35,
+    0.13
+   ],
+   "position": {
+    "x": -1.598,
+    "y": 9.53,
+    "z": 1.476
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "石纹",
+   "role": "拱肩贴皮(凹入区)",
+   "_user_edit": null
+  },
+  {
+   "id": 203,
+   "layer": "拱券层",
+   "asset_id": 20001337,
+   "asset_name": "石质墙壁",
+   "scale": [
+    1.15,
+    0.35,
+    0.13
+   ],
+   "position": {
+    "x": 1.602,
+    "y": 9.53,
+    "z": 1.476
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "石纹",
+   "role": "拱肩贴皮(凹入区)",
+   "_user_edit": null
+  },
+  {
+   "id": 204,
+   "layer": "基座层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    12.9,
+    0.26,
+    5.0
+   ],
+   "position": {
+    "x": 0.002,
+    "y": 0.09,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    11051152,
+    32,
+    null
+   ],
+   "color_tier": 5,
+   "texture": null,
+   "role": "台阶一级(周圈·沉底)",
+   "_user_edit": null
+  },
+  {
+   "id": 205,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 2.302,
+    "y": 7.86,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 42.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k10(φ=47.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 206,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 2.512,
+    "y": 7.65,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 47.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k9(φ=42.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 207,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 2.702,
+    "y": 7.42,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 52.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k8(φ=37.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 208,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 2.872,
+    "y": 7.18,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 57.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k7(φ=32.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 209,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 3.022,
+    "y": 6.92,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 62.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k6(φ=27.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 210,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 2.512,
+    "y": 7.65,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 47.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k9(φ=42.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 211,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 2.702,
+    "y": 7.42,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 52.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k8(φ=37.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 212,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 2.872,
+    "y": 7.18,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 57.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k7(φ=32.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 213,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 3.022,
+    "y": 6.92,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 62.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k6(φ=27.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 214,
+   "layer": "墩身层",
+   "asset_id": 10009008,
+   "asset_name": "白盒·圆柱",
+   "scale": [
+    0.65,
+    3.9,
+    0.65
+   ],
+   "position": {
+    "x": 3.502,
+    "y": 5.31,
+    "z": 1.746
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13156528,
+    24,
+    null
+   ],
+   "color_tier": 3,
+   "texture": null,
+   "role": "半柱柱身",
+   "_user_edit": null
+  },
+  {
+   "id": 215,
+   "layer": "墩身层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.95,
+    0.4,
+    0.95
+   ],
+   "position": {
+    "x": 3.502,
+    "y": 7.61,
+    "z": -1.754
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    14209216,
+    21,
+    null
+   ],
+   "color_tier": 1,
+   "texture": null,
+   "role": "柱头",
+   "_user_edit": null
+  },
+  {
+   "id": 216,
+   "layer": "墩身层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.75,
+    0.15,
+    0.75
+   ],
+   "position": {
+    "x": 3.502,
+    "y": 7.33,
+    "z": -1.754
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "柱颈带",
+   "_user_edit": null
+  },
+  {
+   "id": 217,
+   "layer": "墩身层",
+   "asset_id": 10009008,
+   "asset_name": "白盒·圆柱",
+   "scale": [
+    0.65,
+    3.9,
+    0.65
+   ],
+   "position": {
+    "x": 3.502,
+    "y": 5.31,
+    "z": -1.754
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13156528,
+    24,
+    null
+   ],
+   "color_tier": 3,
+   "texture": null,
+   "role": "半柱柱身",
+   "_user_edit": null
+  },
+  {
+   "id": 218,
+   "layer": "墩身层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.95,
+    0.4,
+    0.95
+   ],
+   "position": {
+    "x": 3.502,
+    "y": 7.61,
+    "z": 1.746
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    14209216,
+    21,
+    null
+   ],
+   "color_tier": 1,
+   "texture": null,
+   "role": "柱头",
+   "_user_edit": null
+  },
+  {
+   "id": 219,
+   "layer": "墩身层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.75,
+    0.15,
+    0.75
+   ],
+   "position": {
+    "x": 3.502,
+    "y": 7.33,
+    "z": 1.746
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "柱颈带",
+   "_user_edit": null
+  },
+  {
+   "id": 220,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": 2.032,
+    "y": 7.52,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 43.1
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k13(φ=46.875°)",
+   "_user_edit": null
+  },
+  {
+   "id": 221,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": 2.172,
+    "y": 7.38,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 46.9
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k12(φ=43.125°)",
+   "_user_edit": null
+  },
+  {
+   "id": 222,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": 2.302,
+    "y": 7.24,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 50.6
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k11(φ=39.375°)",
+   "_user_edit": null
+  },
+  {
+   "id": 223,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": 2.422,
+    "y": 7.08,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 54.4
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k10(φ=35.625°)",
+   "_user_edit": null
+  },
+  {
+   "id": 224,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": 2.532,
+    "y": 6.92,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 58.1
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k9(φ=31.875°)",
+   "_user_edit": null
+  },
+  {
+   "id": 225,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": 2.622,
+    "y": 6.75,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 61.9
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k8(φ=28.125°)",
+   "_user_edit": null
+  },
+  {
+   "id": 226,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": 2.712,
+    "y": 6.58,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 65.6
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k7(φ=24.375°)",
+   "_user_edit": null
+  },
+  {
+   "id": 227,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": 2.782,
+    "y": 6.4,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 69.4
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k6(φ=20.625°)",
+   "_user_edit": null
+  },
+  {
+   "id": 228,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 2.302,
+    "y": 7.86,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 42.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k10(φ=47.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 229,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": 6.112,
+    "y": 11.71,
+    "z": -1.614
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 230,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": 5.592,
+    "y": 11.71,
+    "z": -1.614
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 231,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": 6.112,
+    "y": 11.71,
+    "z": 1.606
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 232,
+   "layer": "檐部层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.3,
+    0.28,
+    0.22
+   ],
+   "position": {
+    "x": 5.592,
+    "y": 11.71,
+    "z": 1.606
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "齿饰块",
+   "_user_edit": null
+  },
+  {
+   "id": 233,
+   "layer": "拱券层",
+   "asset_id": 20002154,
+   "asset_name": "玻璃窗户",
+   "scale": [
+    0.64,
+    0.63,
+    0.1
+   ],
+   "position": {
+    "x": 4.852,
+    "y": 7.9,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": null,
+   "color_tier": 0,
+   "texture": "窗形·玻璃",
+   "role": "墩身卫室窗(本色)",
+   "_user_edit": null
+  },
+  {
+   "id": 234,
+   "layer": "拱券层",
+   "asset_id": 20002154,
+   "asset_name": "玻璃窗户",
+   "scale": [
+    0.64,
+    0.63,
+    0.1
+   ],
+   "position": {
+    "x": 4.852,
+    "y": 7.9,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": null,
+   "color_tier": 0,
+   "texture": "窗形·玻璃",
+   "role": "墩身卫室窗(本色)",
+   "_user_edit": null
+  },
+  {
+   "id": 235,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 3.142,
+    "y": 6.65,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 67.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k5(φ=22.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 236,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 3.242,
+    "y": 6.37,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 72.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k4(φ=17.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 237,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 3.322,
+    "y": 6.09,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 77.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k3(φ=12.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 238,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 3.372,
+    "y": 5.79,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 82.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k2(φ=7.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 239,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 3.402,
+    "y": 5.5,
+    "z": 1.696
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 87.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k1(φ=2.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 240,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 3.142,
+    "y": 6.65,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 67.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k5(φ=22.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 241,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 3.242,
+    "y": 6.37,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 72.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k4(φ=17.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 242,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 3.322,
+    "y": 6.09,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 77.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k3(φ=12.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 243,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 3.372,
+    "y": 5.79,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 82.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k2(φ=7.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 244,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.31,
+    0.45,
+    0.5
+   ],
+   "position": {
+    "x": 3.402,
+    "y": 5.5,
+    "z": -1.704
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 87.5
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "外圈券饰k1(φ=2.5°)",
+   "_user_edit": null
+  },
+  {
+   "id": 245,
+   "layer": "墩身层",
+   "asset_id": 20001337,
+   "asset_name": "石质墙壁",
+   "scale": [
+    1.28,
+    0.93,
+    0.13
+   ],
+   "position": {
+    "x": 2.752,
+    "y": 3.04,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 90.0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "石纹",
+   "role": "门洞边梃贴皮(内衬)",
+   "_user_edit": null
+  },
+  {
+   "id": 246,
+   "layer": "墩身层",
+   "asset_id": 20001337,
+   "asset_name": "石质墙壁",
+   "scale": [
+    1.32,
+    0.93,
+    0.13
+   ],
+   "position": {
+    "x": 4.402,
+    "y": 3.04,
+    "z": -1.644
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "石纹",
+   "role": "墩身贴皮(南/北面)",
+   "_user_edit": null
+  },
+  {
+   "id": 247,
+   "layer": "墩身层",
+   "asset_id": 20001337,
+   "asset_name": "石质墙壁",
+   "scale": [
+    1.32,
+    0.93,
+    0.13
+   ],
+   "position": {
+    "x": 4.402,
+    "y": 3.04,
+    "z": 1.636
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "石纹",
+   "role": "墩身贴皮(南/北面)",
+   "_user_edit": null
+  },
+  {
+   "id": 248,
+   "layer": "墩身层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    3.3,
+    4.63,
+    3.2
+   ],
+   "position": {
+    "x": 4.402,
+    "y": 3.04,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13156528,
+    24,
+    null
+   ],
+   "color_tier": 3,
+   "texture": null,
+   "role": "墩芯骨架",
+   "_user_edit": null
+  },
+  {
+   "id": 249,
+   "layer": "墩身层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    3.3,
+    0.35,
+    3.35
+   ],
+   "position": {
+    "x": 4.402,
+    "y": 5.52,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "起拱横带(impost)",
+   "_user_edit": null
+  },
+  {
+   "id": 250,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": 2.852,
+    "y": 6.21,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 73.1
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k5(φ=16.875°)",
+   "_user_edit": null
+  },
+  {
+   "id": 251,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": 2.902,
+    "y": 6.03,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 76.9
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k4(φ=13.125°)",
+   "_user_edit": null
+  },
+  {
+   "id": 252,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": 2.942,
+    "y": 5.83,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 80.6
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k3(φ=9.375°)",
+   "_user_edit": null
+  },
+  {
+   "id": 253,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": 2.962,
+    "y": 5.64,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 84.4
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k2(φ=5.625°)",
+   "_user_edit": null
+  },
+  {
+   "id": 254,
+   "layer": "拱券层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.22,
+    0.55,
+    3.2
+   ],
+   "position": {
+    "x": 2.972,
+    "y": 5.45,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 88.1
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "券石k1(φ=1.875°)",
+   "_user_edit": null
+  },
+  {
+   "id": 255,
+   "layer": "墩身层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    3.35,
+    0.1,
+    3.4
+   ],
+   "position": {
+    "x": 4.402,
+    "y": 5.8,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "起拱带盖线",
+   "_user_edit": null
+  },
+  {
+   "id": 256,
+   "layer": "拱券层",
+   "asset_id": 20001337,
+   "asset_name": "石质墙壁",
+   "scale": [
+    1.28,
+    0.99,
+    0.13
+   ],
+   "position": {
+    "x": 6.082,
+    "y": 7.82,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 90.0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "石纹",
+   "role": "拱上墙贴皮(东/西面)",
+   "_user_edit": null
+  },
+  {
+   "id": 257,
+   "layer": "墩身层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.85,
+    0.25,
+    0.85
+   ],
+   "position": {
+    "x": 3.502,
+    "y": 3.23,
+    "z": -1.754
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "柱基",
+   "_user_edit": null
+  },
+  {
+   "id": 258,
+   "layer": "墩身层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    1.0,
+    2.75,
+    0.8
+   ],
+   "position": {
+    "x": 3.502,
+    "y": 1.73,
+    "z": -1.754
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": null,
+   "role": "高柱座",
+   "_user_edit": null
+  },
+  {
+   "id": 259,
+   "layer": "墩身层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    0.85,
+    0.25,
+    0.85
+   ],
+   "position": {
+    "x": 3.502,
+    "y": 3.23,
+    "z": 1.746
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    13682872,
+    24,
+    null
+   ],
+   "color_tier": 2,
+   "texture": null,
+   "role": "柱基",
+   "_user_edit": null
+  },
+  {
+   "id": 260,
+   "layer": "墩身层",
+   "asset_id": 10009001,
+   "asset_name": "白盒·长方体",
+   "scale": [
+    1.0,
+    2.75,
+    0.8
+   ],
+   "position": {
+    "x": 3.502,
+    "y": 1.73,
+    "z": 1.746
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": null,
+   "role": "高柱座",
+   "_user_edit": null
+  },
+  {
+   "id": 261,
+   "layer": "墩身层",
+   "asset_id": 20001377,
+   "asset_name": "含窗木墙",
+   "scale": [
+    1.28,
+    0.93,
+    0.13
+   ],
+   "position": {
+    "x": 6.082,
+    "y": 3.04,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 90.0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "窗形·木",
+   "role": "侧立面木窗板(暗龛)",
+   "_user_edit": null
+  },
+  {
+   "id": 262,
+   "layer": "檐部层",
+   "asset_id": 20002158,
+   "asset_name": "石质墙体组件",
+   "scale": [
+    1.2,
+    0.61,
+    0.13
+   ],
+   "position": {
+    "x": -2.998,
+    "y": 11.03,
+    "z": -1.684
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "精细石",
+   "role": "横饰带贴皮",
+   "_user_edit": "scale [1.1, 0.61, 0.13] -> [1.2, 0.61, 0.13]"
+  },
+  {
+   "id": 263,
+   "layer": "檐部层",
+   "asset_id": 20002158,
+   "asset_name": "石质墙体组件",
+   "scale": [
+    1.2,
+    0.61,
+    0.13
+   ],
+   "position": {
+    "x": 3.002,
+    "y": 11.03,
+    "z": -1.684
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "精细石",
+   "role": "横饰带贴皮",
+   "_user_edit": "scale [1.1, 0.61, 0.13] -> [1.2, 0.61, 0.13]"
+  },
+  {
+   "id": 264,
+   "layer": "屋顶层",
+   "asset_id": 20001316,
+   "asset_name": "石质横梁",
+   "scale": [
+    2.16,
+    0.7,
+    1.2
+   ],
+   "position": {
+    "x": 0.002,
+    "y": 14.9,
+    "z": -0.004
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    14209216,
+    21,
+    null
+   ],
+   "color_tier": 1,
+   "texture": "精细石",
+   "role": "脊梁压顶",
+   "_user_edit": "scale [2.14, 0.7, 1.2] -> [2.16, 0.7, 1.2]"
+  },
+  {
+   "id": 265,
+   "layer": "檐部层",
+   "asset_id": 20002158,
+   "asset_name": "石质墙体组件",
+   "scale": [
+    1.2,
+    0.61,
+    0.13
+   ],
+   "position": {
+    "x": -2.998,
+    "y": 11.03,
+    "z": 1.676
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "精细石",
+   "role": "横饰带贴皮",
+   "_user_edit": "scale [1.1, 0.61, 0.13] -> [1.2, 0.61, 0.13]"
+  },
+  {
+   "id": 266,
+   "layer": "檐部层",
+   "asset_id": 20002158,
+   "asset_name": "石质墙体组件",
+   "scale": [
+    1.2,
+    0.61,
+    0.13
+   ],
+   "position": {
+    "x": 3.002,
+    "y": 11.03,
+    "z": 1.676
+   },
+   "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "color": [
+    12103840,
+    32,
+    null
+   ],
+   "color_tier": 4,
+   "texture": "精细石",
+   "role": "横饰带贴皮",
+   "_user_edit": "scale [1.1, 0.61, 0.13] -> [1.2, 0.61, 0.13]"
+  }
+ ]
+}
