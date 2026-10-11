@@ -47,7 +47,12 @@ def cmd_verify(args):
     from .verify import verify_file
     ok = True
     for p in args.files:
-        verdict, msgs = verify_file(p, args.catalog, args.universe)
+        try:
+            verdict, msgs = verify_file(p, args.catalog, args.universe)
+        except AssertionError as e:
+            print(f"[FAIL] {os.path.basename(p)} 容器断言: {e}")
+            ok = False
+            continue
         for m in msgs:
             print(("  " if verdict == "PASS" else "SICK " if not m.startswith("WARN")
                    and verdict == "SICK" else "  ") + m)
@@ -89,6 +94,10 @@ def cmd_inspect(args):
 
 
 def main(argv=None):
+    # 中文 Windows 控制台默认 GBK：中文输出在 UTF-8 终端（AI 子进程/VSCode/Git Bash）下乱码——统一 UTF-8
+    for stream in (sys.stdout, sys.stderr):
+        if stream.encoding and stream.encoding.lower().replace("-", "") != "utf8":
+            stream.reconfigure(encoding="utf-8", errors="replace")
     ap = argparse.ArgumentParser(prog="qxfmt", description="千星奇域文件格式工具链")
     sub = ap.add_subparsers(dest="cmd", required=True)
 

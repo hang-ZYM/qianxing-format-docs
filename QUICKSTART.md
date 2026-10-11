@@ -56,3 +56,7 @@ print(verify_bytes(out.to_bytes()))
 - 合成的是**图文件**（.gis）；让它出现在编辑器里需要走官方导入通道，本工具不提供也不涉及注入方法。
 - 模板手术目前覆盖：文本 / 图名 / guid。加节点、加边、黑板变量走 `qxfmt.pbtree` 的树原语自行扩展（结构参考 docs/03 §2、docs/22 §3）。
 - verify 是**规则面**校验（能拦已知病灶形态），不等于装载判定；装载级确认见 docs/06 §10 的节点级差分方法。
+
+## 常见问题
+
+- **中文输出乱码**：CLI 输出固定为 UTF-8（v1.7.6 起）。原生 cmd 默认 GBK，如见乱码请先执行 `chcp 65001`，或改用 Windows Terminal / Git Bash / VS Code 终端，或设 `PYTHONUTF8=1`。
