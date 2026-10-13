@@ -12,3 +12,5 @@ dist/
 
 # 本地测试产物
 _test_*
+# 脱敏真实清单（含敏感串本体）——永不提交
+desens_manifest.json
