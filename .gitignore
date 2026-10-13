@@ -12,5 +12,7 @@ dist/
 
 # 本地测试产物
 _test_*
+# 模块库运行状态根（oplog/关卡版本/中间产物——mods/ 默认状态根，见 mods/config）
+_state/
 # 脱敏真实清单（含敏感串本体）——永不提交
 desens_manifest.json
