@@ -7,7 +7,7 @@ assemble v1（mods/_vendor/assemble.py）实体插入能力的泛化：v1 只会
 底座原则（docs 卷实体写作纪律）：以当前版本 .gil 为底座少造多改——只追加 f5
 实体条目与 f6 注册叶，其余顶层字段字节原样保留。
 
-调用（docs/30 P1 批次）：
+调用（手册/30 P1 批次）：
     r = entity.entity_place(aid=20001018, pos=(5.0, 5.0), guid=0x40460001)  # 显式 guid
     r = entity.entity_place(aid=30003006, pos=(0.0, -10.0))                 # guid=None 台账分配
     # r.version = 关卡新版本号；r.value = {guid/aid/entity_count/...}

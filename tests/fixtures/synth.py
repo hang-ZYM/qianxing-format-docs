@@ -12,7 +12,7 @@
   3. 最小图件（write_min_gis）——level.mount 的输入 .gis：单文档单图
      （kernel71 事件 → kernel1 打印 + 文本引脚），过 load_graph_doc 结构门。
 
-地形夹具（write_terrain_gil）按 docs/17 形态构造 f7 组：组{f1:id, f2:名, f4×N 地块}，
+地形夹具（write_terrain_gil）按 手册/17 形态构造 f7 组：组{f1:id, f2:名, f4×N 地块}，
 地块 {f1:格键, f2..f6 五字段}——terrain.patch 契约测试的底座。
 
 所有构造器不依赖游戏目录与工具树（CORE 夹具）；字节形态对齐仓库 docs 卷宗
@@ -178,7 +178,7 @@ def write_min_gis(path, graph_guid: int, category: int = 20000,
 def terrain_level_proto(tiles: list[dict], group_id: int = 1,
                         group_name: bytes = b"fixture_group") -> bytes:
     """地形关卡 proto：f7 → 组{f1:id, f2:名, f4×N 地块}。
-    tiles = [{"gx":100,"gz":100,"layer":2,"material":3,...}, ...]（docs/17 形态）。"""
+    tiles = [{"gx":100,"gz":100,"layer":2,"material":3,...}, ...]（手册/17 形态）。"""
     field_no = {"layer": 2, "material": 3, "water": 4, "path": 5, "slope": 6}
     children: list = [[1, 0, enc(group_id)], [2, 2, group_name]]
     for t in tiles:

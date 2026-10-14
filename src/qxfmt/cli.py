@@ -109,7 +109,7 @@ def main(argv=None):
     p.add_argument("-t", "--template", required=True, help="模板 .gis 文件")
     p.add_argument("-o", "--output", required=True, help="输出 .gis 文件")
     p.add_argument("--text", help="替换打印节点的文本")
-    p.add_argument("--name", help="替换图名（注意：对已有图的改名会导致导入拒收，docs/25 §3）")
+    p.add_argument("--name", help="替换图名（注意：对已有图的改名会导致导入拒收，手册/25 §3）")
     p.add_argument("--guid", type=lambda s: int(s, 0), help="替换图 guid（如 0x40000030）")
     p.set_defaults(fn=cmd_compose)
 

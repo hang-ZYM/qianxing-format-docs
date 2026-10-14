@@ -4,7 +4,7 @@
 （可能非最小编码，保序回放依赖这一点），2 存载荷字节，5/1 存定长字节。
 
 嵌套长度前缀是字节手术的雷区：改一处串的长度会级联影响所有外层容器
-的长度字节。正确做法是整树 parse → 定点修改 → 整树 emit（docs/22 §4）。
+的长度字节。正确做法是整树 parse → 定点修改 → 整树 emit（手册/22 §4）。
 """
 
 
@@ -69,7 +69,7 @@ def emit(nodes) -> bytes:
 
 
 def roundtrip(b: bytes) -> bool:
-    """encode(parse(x)) == x —— 任何修改前必须为真（docs/01 §5）。"""
+    """encode(parse(x)) == x —— 任何修改前必须为真（手册/01 §5）。"""
     return emit(parse(b)) == b
 
 

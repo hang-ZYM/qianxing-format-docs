@@ -507,7 +507,7 @@ def _node_index(node):
 def _node_pins(node):
     """NodeInstance.f4[] → [(kind, index, TypedValue|None, edge|None)]（调研 §0.3：
     f1=shell_sig{f1:kind,f2:index}，f3=TypedValue，f5=边）。sig.index 0 基、=0 时省略
-    f2 → 解析 None→0（docs/03 [J]）。kind：1=流程入 2=流程出 3=数据入 4=数据出。
+    f2 → 解析 None→0（手册/03 [J]）。kind：1=流程入 2=流程出 3=数据入 4=数据出。
     解析失败返回 None（与空引脚列表区分）。"""
     out = []
     try:

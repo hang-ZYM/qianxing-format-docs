@@ -2,12 +2,12 @@
 """terrain.patch — 地形产线模块（P1 第二件）。
 
 把成熟工具 TerrainPatcher（mods/_vendor/terrain_patch.py，实战一次通过——
-仓库 docs/17 地形系统）包装为四要素契约模块。纪律：**只 import 包装不改**——
+仓库 手册/17 地形系统）包装为四要素契约模块。纪律：**只 import 包装不改**——
 set_layer/set_slope/set_material/set_water/set_path 与 save（自带往返校验）全部
 原样来自 vendored 工具；本模块补的是契约层：
 
   前置（PreconditionError：不计失败不计拒绝，编排器换路）
-    P1 格键范围    gx/gz ∈ [100,119]（grid 20×20，docs/17）
+    P1 格键范围    gx/gz ∈ [100,119]（grid 20×20，手册/17）
     P2 坡互斥律    同格不得坡(f6)与水(f4)/路径(f5)并存——既查本批 cells 内
                    同格冲突，也对底座现状复核（对已有水/路径的格设坡、对已
                    有坡的格加水/路径 → 拒）
@@ -77,7 +77,7 @@ GRID_LO, GRID_HI = 100, 119        # P1 格键范围（20×20 设计网格）
 LAYER_LO, LAYER_HI = 1, 3          # P3 层位值域（省略=1）
 MATERIAL_LO, MATERIAL_HI = 1, 8    # P5 材质八色（1冰/4草/5混拼/6岩…）
 _FIELDS = ("layer", "slope", "material", "water", "path")
-# 地块字段号（docs/17）：f2 层位 / f3 材质 / f4 水 / f5 路径 / f6 坡
+# 地块字段号（手册/17）：f2 层位 / f3 材质 / f4 水 / f5 路径 / f6 坡
 _FIELD_NO = {"layer": 2, "material": 3, "water": 4, "path": 5, "slope": 6}
 
 

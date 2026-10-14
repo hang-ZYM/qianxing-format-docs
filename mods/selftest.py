@@ -33,6 +33,10 @@ TARGETS = [
     ("mods.test_deploy", "CORE", "-"),
     ("mods.test_graphgen", "CORE+FULL", "工具树（图装配器 + 门禁四连）"),
     ("mods.test_entity", "FULL", "工具树（合成模板库 + trial_gate）"),
+    ("mods.test_component", "FULL", "工具树（合成模板库 + trial_gate）"),
+    ("mods.test_asset", "FULL", "工具树（合成模板库 + trial_gate）"),
+    ("mods.test_element", "FULL", "工具树（合成模板库 + trial_gate）"),
+    ("mods.test_env", "FULL", "游戏目录真实样本图（1073741954.gil）"),
 ]
 
 

@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 """archdraw - BOM -> 建筑施工图（SVG 四件套）。
 
-输入"实体 BOM"（JSON，格式见 docs/29 §2），输出：
+输入"实体 BOM"（JSON，格式见 手册/29 §2），输出：
   正立面图 / 侧立面图 / 平面图 / 拱券大样图（若 BOM 含拱券件）。
 
-画法原则（docs/29 §5）:
+画法原则（手册/29 §5）:
   - 立面=聚合画法（墙体整体面层/拱画同心弧带+放射缝/柱分段式），不逐件画色块；
   - 大样=逐构件画法（详图就要一块一块画）；
   - 全部几何从 BOM 推导（标高/半径/缝线/件数动态计算），改 BOM 图纸自动跟。
@@ -23,7 +23,7 @@ import argparse
 import json
 import math
 import os
-ap = argparse.ArgumentParser(description='BOM -> 施工图四件套 (docs/29)')
+ap = argparse.ArgumentParser(description='BOM -> 施工图四件套 (手册/29)')
 ap.add_argument('bom')
 ap.add_argument('--out', default='.')
 args = ap.parse_args()
@@ -551,7 +551,9 @@ if __name__ == '__main__':
     import os as _os
     _os.makedirs(OUT_DIR, exist_ok=True)
     elevation(); elevation_upper(); elevation_anno()
-    for fn in (draw_side, draw_plan, draw_detail):
+    # 大样图由上方模块级代码直接写出；draw_detail 这个函数名不存在（历史遗留引用），
+    # 原先写在元组里会在构造元组时抛 NameError 并以非零码退出，故移除。
+    for fn in (draw_side, draw_plan):
         try:
             fn()
         except Exception as ex:

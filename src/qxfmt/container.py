@@ -1,6 +1,6 @@
 """qxfmt.container — .gil/.gis/.gia 容器读写。
 
-布局（docs/01）::
+布局（手册/01）::
 
     [0:4]   payload_total  大端 uint32  = 文件总大小 - 4
     [4:8]   version        大端 uint32  = 1

@@ -7,7 +7,7 @@
 用法:
     python -m gia_extract <文件.gia> [--json out.json]
 
-依赖: qxfmt（本仓库）。字段路径见 docs/29。
+依赖: qxfmt（本仓库）。字段路径见 手册/29。
 """
 import argparse
 import json
@@ -90,7 +90,7 @@ def extract(gia_path):
 
 
 def main():
-    ap = argparse.ArgumentParser(description='.gia 实体反向提取 (docs/27, docs/29)')
+    ap = argparse.ArgumentParser(description='.gia 实体反向提取 (手册/27, 手册/29)')
     ap.add_argument('gia')
     ap.add_argument('--json', dest='json_out', help='输出 JSON 路径（默认打印前 3 条）')
     args = ap.parse_args()

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """level.deploy（关卡部署到导入目录）+ level.judge（试玩观察判决）。
 
-定位（docs/30）：设计书把两者合称「部署+判决」组合形态——实现拆成两个注册
+定位（手册/30）：设计书把两者合称「部署+判决」组合形态——实现拆成两个注册
 单元，编排器两连调即得（v = deploy 然后 judge）。
 本文件只注册 level.deploy 与 level.judge；level.mount 由 mods/level.py 另行注册。
 

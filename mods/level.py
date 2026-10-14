@@ -5,7 +5,7 @@
 单元，挂到 mods/core.py 基础设施上（@module / Result / 版本制 / 异常语义）。
 本模块只编排不实现：装配与校验全部来自 assemble v1（vendored 只读依赖）。
 
-调用（docs/30 竖线第二步）：
+调用（手册/30 竖线第二步）：
     r2 = level.level_mount(graph_gis=r1.artifact, host_guid=0x41400001,
                            graph_guid=0x40000001, category=20000)  # 可选 level_name
     # r2.version = 关卡新版本号；r2.value = 新版本 .gil 路径

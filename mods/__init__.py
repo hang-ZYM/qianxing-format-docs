@@ -2,7 +2,7 @@
 """千星奇域文件侧模块库（mods）。
 
 模块 = 可调用单元，接口标准（前置检查 / 确定性执行 / 后验验收 / 自动日志 /
-版本回滚语义）见仓库 docs/30《任务分解与模块化方法论》。
+版本回滚语义）见仓库 手册/30《任务分解与模块化方法论》。
 
 子模块：
     core       基础设施（Result / 异常体系 / 版本制 / 操作日志）
@@ -13,6 +13,10 @@
     deploy     level.deploy / level.judge —— 部署与试玩判决
     terrain    terrain.patch —— 地形定点手术
     entity     entity.place —— 放置实体
+    component  component.attach —— 向实体槽追加/替换组件
+    env        env.set / env.direct —— 关卡环境（夜晚/白天/纯色）
+    asset      asset.package / asset.deploy —— 资产打包与部署
+    element    element.build —— 元件构造与打包
     selftest   测试入口（python -m mods.selftest [--full]）
 
 依赖：

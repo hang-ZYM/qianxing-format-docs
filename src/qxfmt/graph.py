@@ -1,16 +1,16 @@
 """qxfmt.graph — 节点图载荷的导航与定位。
 
-图在容器里的藏身路径（docs/03 §2.1、docs/21 §5）::
+图在容器里的藏身路径（手册/03 §2.1、手册/21 §5）::
 
     proto → f10（图库；不在顶层时在 f2 分片内容里）
           → f1（图条目包装）× 1..N
           → f1（图文档）
 
-节点（f3，NodeInstance）与引脚（f4，PinInstance）的字段语义见 docs/03 §2.2/§2.3。
+节点（f3，NodeInstance）与引脚（f4，PinInstance）的字段语义见 手册/03 §2.2/§2.3。
 """
 from .pbtree import parse, first, all_of, varint_value
 
-PRINT_KERNEL = 1  # 打印节点（节点目录 id，docs/07）
+PRINT_KERNEL = 1  # 打印节点（节点目录 id，手册/07）
 
 
 def find_graphs(proto: bytes):
@@ -87,7 +87,7 @@ def string_storage(tv_tree):
 def pin_edges(pin_tree):
     """引脚 f5 的全部连线 → [(目标节点index, 目标shell_sig, 目标kernel_sig)]。
 
-    边存于源引脚、记录对端（目标）签名（docs/22 §3）：执行边对端 kind=1，
+    边存于源引脚、记录对端（目标）签名（手册/22 §3）：执行边对端 kind=1，
     数据边对端 kind=4。
     """
     out = []
@@ -115,7 +115,7 @@ def graph_guid(graph_nodes):
 
 
 def graph_name(graph_nodes):
-    """图名 f2（仅存在于视图层，docs/21 §5）。"""
+    """图名 f2（仅存在于视图层，手册/21 §5）。"""
     f2 = first(graph_nodes, 2)
     if f2 is None or f2[1] != 2:
         return None

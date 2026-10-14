@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """graphgen.build — 逻辑 IR → .gis。
 
-接口（docs/30 用法原样）::
+接口（手册/30 用法原样）::
 
     from mods import graphgen
     from mods.graphgen import GraphLogic, Node, Exec
