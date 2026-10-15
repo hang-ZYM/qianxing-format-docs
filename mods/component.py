@@ -28,19 +28,24 @@ f8(表现·引用)，每一次出现 = 一个组件条目：
           f2 = str            ← **光源名称**（"光源1"…，官方默认按序命名）
           f3 = "GI_RootNode"  ← 挂接点（次，129 例）
           f4                  ← 参数组
-            f1 = 1
-            f2 = f32          ← **半径**（10/35/50/100/1000 实测）
+            f1 = 1            ← **仅聚光灯携带**（判别律：f4 带 f1 ⇔ 聚光灯，不带 ⇔ 点光源）
+            f2 = f32          ← **生效范围**（米；10/35/50/100/1000 实测——官方「角色进入该
+                                 范围时光源才加载」，性能项，非光照强度）
             f3 = vec3         ← **位置**（相对挂接点偏移，{f1:x,f2:y,f3:z}，零省略）
             f4 = vec3         ← **旋转**
             f5 = 1            ← 标志（143 例恒 1）
             f51 | f52         ← **互斥**参数组（335 条目全恰有其一二选一：f51 206 / f52 129）
-              f2 = f32        ← 强度/范围（30/3/26.33…）
-              f3 = f32        ← 范围/强度（1.5/3/5…）
+              f2 = f32        ← **半径**（点/聚同；30/3/26.33…）
+              f3 = f32        ← f51 **强度**／f52 **角度（度）**（1.5/3/5…）
+              f4 = f32        ← 仅 f52：**强度**
               f4/(f5) = varint← **颜色 ARGB**（-1=默认；实测 0xFF9B0CD2/0xFF41A2BD 等）
           f5                  ← 序号（= 条目 f3）
           f6 = "GI_RootNode"  ← **挂接点**（243 例；默认根节点）
         f502 = 1              ← 结构标志
 已定案（2026-10-15 人工核验）：f51 = 点光源、f52 = 聚光灯（此前曾疑 f52 = 点光源，已否）。
+**判别律**：f501.f4 **带 f1 ⇔ 聚光灯；不带 f1 ⇔ 点光源**（生成器据此落 f1——点光源不得带 f1）。
+已定案（2026-10-15，用户从编辑器面板直读，四项全中）：外层 f4.f2 = **生效范围（米）**、
+变体 f2 = **半径**、点 f51.f3 / 聚 f52.f4 = **强度**、聚 f52.f3 = **角度（度）**。
 未锚项（如实）：f3 语义；f501.f3。默认 group 取多数派 f51。构造默认值全部取自真实样本实见值（禁猜：不造未见值）。
 
 ═══ component.attach 契约（四要素）═══
@@ -118,28 +123,33 @@ def _vec3(f: int, x=None, y=None, z=None) -> list:
 def light_component(name: str = "光源1", radius: float = 9.0,
                     intensity: float = 30.0, effect_range: float = 3.0,
                     color: int = 0xFFFFB347, attach: str = LIGHT_ATTACH_DEFAULT,
-                    pos=None, rot=None, seq: int = 2, group: str = "f51") -> bytes:
+                    pos=None, rot=None, seq: int = 2, group: str = "f51",
+                    angle: float | None = None) -> bytes:
     """生成一个光源组件条目字节（cid38，f7 槽用）。
 
     参数：
         name          光源名称（f501.f2）
-        radius        半径（f501.f4.f2，f32）
-        intensity     强度（f51.f2 / f52.f2）
-        effect_range  生效范围（f51.f3 / **f52.f4**——见下方「f52 组内字段序」）
-        color         颜色 ARGB int（f51.f4 / f52.f5；默认暖琥珀 0xFFFFB347）
+        radius        半径（变体 f2，f32；点/聚共用）
+        intensity     强度（点 f51.f3 / 聚 f52.f4）
+        effect_range  生效范围 米（**外层 f501.f4.f2**；官方「角色进入该范围才加载」性能项）
+        color         颜色 ARGB int（点 f51.f4 / 聚 f52.f5；默认暖琥珀 0xFFFFB347）
         attach        挂接点（f501.f6，默认 GI_RootNode）
-        pos/rot       相对挂接点偏移 (x,y,z) 或 None（None=原点/不旋转）
+        pos/rot       相对挂接点偏移/旋转 (x,y,z) 或 None（None=零）
         seq           条目 f3 与 f501.f5（真实样本单光源实见 2..4；默认 2）
-        group         "f51"（多数派，206 例）或 "f52"（129 例）——互斥参数组
+        group         "f51"=点光源（多数派，206 例）/ "f52"=聚光灯（129 例）——互斥参数组
+                      （判别律：带 f1 者为聚光灯，见 docstring「字段序」）
+        angle         仅 f52：锥角（度），落变体 f52.f3；None → 退回 radius
 
     返回：组件消息字节 = {f1:38, f2:1, f49:{...}}，可直接交 component.attach。
 
-    ═══ f52 组内字段序（2026-10-14 修，M4 点光源任务；字节证据）═══
-    f51 = {f2:强度, f3:生效范围, f4:颜色}（3 字段）。
-    f52 = {f2:强度, **f3:半径**, f4:生效范围, f5:颜色}（4 字段）——**旧代码把 f4 当半径是错的**。
-    依据：①真实样本 aid10005018 的 f52 为 {f2:22.0, f3:48.41, f4:3.35}，其**外层半径=50.0**
-    → f3(48.41)≈外层半径，f4(3.35) 才是生效范围；②全档 f52 语料：f4∈[1.4,5.0] 与外层半径
-    **无关**（=生效范围），f3∈[20,88] 随外层半径走（=半径）。f51 无对应字段，半径只在外层 f4.f2。
+    ═══ 字段序（2026-10-15 修订，用户从编辑器面板直读；旧映射全废）═══
+    外层参数组 f501.f4：f2 = 生效范围（米）｜f3 = 位置 vec3｜f4 = 旋转 vec3。
+    变体 f51（点光源）= {f2:半径, f3:强度, f4:颜色}（2 个 float + 1 色）。
+    变体 f52（聚光灯）= {f2:半径, f3:角度（度）, f4:强度, f5:颜色}（3 个 float + 1 色）。
+    **旧映射（作废）**：曾把「半径」落在外层 f4.f2、「强度」落在变体 f2、「生效范围」落在
+    点 f51.f3 / 聚 f52.f4，聚 f52.f3 记作未锚浮点——据此写出的字节会把值落错格子。
+    依据：某聚光灯面板显示「半径 46.339 / 强度 1.28 / 角度 99.72 / 生效范围 50」，逐项对上
+    字节 f52.f2=46.339、f52.f4=1.282、f52.f3=99.719、外层 f501.f4.f2=50（**四项全中**）。
     """
     if group not in ("f51", "f52"):
         raise core.PreconditionError(f"group 须为 'f51'/'f52'，得到: {group!r}")
@@ -151,14 +161,28 @@ def light_component(name: str = "光源1", radius: float = 9.0,
         raise core.PreconditionError(f"color 须为 0..0xFFFFFFFF 的 ARGB 整数，得到: {color!r}")
 
     if group == "f51":
-        pgroup = _fm(51, [_f32(2, intensity), _f32(3, effect_range), _fl(4, int(color))])
+        # 点光源变体：{f2:半径, f3:强度, f4:颜色}（见 docstring「字段序」）
+        pgroup = _fm(51, [_f32(2, radius), _f32(3, intensity), _fl(4, int(color))])
     else:
-        # f52 = {f2:强度, f3:半径, f4:生效范围, f5:颜色}（见 docstring「f52 组内字段序」）
-        pgroup = _fm(52, [_f32(2, intensity), _f32(3, float(radius)),
-                          _f32(4, effect_range), _fl(5, int(color))])
+        # 聚光灯变体：{f2:半径, f3:角度(度), f4:强度, f5:颜色}（见 docstring「字段序」）
+        a = float(angle) if angle is not None else float(radius)
+        pgroup = _fm(52, [_f32(2, radius), _f32(3, a),
+                          _f32(4, intensity), _fl(5, int(color))])
 
     p = pos if isinstance(pos, (list, tuple)) and len(pos) == 3 else (None, None, None)
     r = rot if isinstance(rot, (list, tuple)) and len(rot) == 3 else (None, None, None)
+
+    # 外层参数组 f501.f4（**判别律**：带 f1 ⇔ 聚光灯；不带 f1 ⇔ 点光源）
+    f4_kids = []
+    if group == "f52":
+        f4_kids.append(_fl(1, 1))           # 仅聚光灯携带 f1
+    f4_kids += [
+        _f32(2, effect_range),              # 生效范围（米）
+        _vec3(3, *p),                       # 位置（相对挂接点）
+        _vec3(4, *r),                       # 旋转
+        _fl(5, 1),                          # 标志
+        pgroup,                             # 半径/强度（点 f51）/角度·强度（聚 f52）/颜色
+    ]
 
     entry = _fm(1, [                        # f49.f1 = 光源条目
         _fl(1, 1),                          # 光序号（1 基）
@@ -166,14 +190,7 @@ def light_component(name: str = "光源1", radius: float = 9.0,
         _fl(3, int(seq)),                   # 序号/计数器
         _fm(501, [                          # 光源配置
             _fstr(2, name),                 # 光源名称
-            _fm(4, [                        # 参数组
-                _fl(1, 1),
-                _f32(2, radius),            # 半径
-                _vec3(3, *p),               # 位置（相对挂接点）
-                _vec3(4, *r),               # 旋转
-                _fl(5, 1),
-                pgroup,                     # 强度/范围/颜色（f51 | f52 互斥）
-            ]),
+            _fm(4, f4_kids),                # 参数组（f1 仅聚光灯）
             _fl(5, int(seq)),               # 序号
             _fstr(6, attach),               # 挂接点
         ]),

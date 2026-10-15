@@ -7,7 +7,7 @@
 合成宿主样本 + 最小图件，零游戏资产）**只读**建版为 v1；工具树 guid_ledger.json 经
 monkeypatch 重定向（分配路径不写真实台账）；trial_gate 走真实产线。
 
-覆盖：光源组件生成器形态 / 正例挂载（cid38 光源，f7 槽）/ 读回逐字节一致 /
+覆盖：光源组件生成器形态（含判别律：外层 f501.f4 带 f1 ⇔ 聚光灯、不带 ⇔ 点光源）/ 正例挂载（cid38 光源，f7 槽）/ 读回逐字节一致 /
 负例（重复挂 / cid 与载荷不符 / 实体不在位 / slot 非法）/ replace 替换路径 / 底座只读。
 """
 from __future__ import annotations
@@ -86,11 +86,39 @@ def main() -> int:
     f4 = next(x for x in lp if x[0] == 4)
     l4 = parse(f4[2])
     import struct as _s
-    radius = _s.unpack("<f", next(x for x in l4 if x[0] == 2)[2])[0]
-    ok("半径落 f501.f4.f2", abs(radius - 9.0) < 1e-5)
+    eff = _s.unpack("<f", next(x for x in l4 if x[0] == 2)[2])[0]
+    ok("生效范围落外层 f501.f4.f2（非半径）", abs(eff - 3.0) < 1e-5)
+    ok("点光：外层 f501.f4 **不带 f1**（判别律：带 f1 ⇔ 聚光灯）",
+       all(x[0] != 1 for x in l4))
     ok("颜色组 f51 在（互斥参数组，多数派）", any(x[0] == 51 for x in l4))
+    g51 = parse(next(x for x in l4 if x[0] == 51)[2])
+    rad = _s.unpack("<f", next(x for x in g51 if x[0] == 2)[2])[0]
+    inten = _s.unpack("<f", next(x for x in g51 if x[0] == 3)[2])[0]
+    ok("半径落变体 f51.f2（非强度）", abs(rad - 9.0) < 1e-5)
+    ok("强度落变体 f51.f3（非生效范围）", abs(inten - 30.0) < 1e-5)
     ok("挂接点 f501.f6=GI_RootNode",
        next(x for x in lp if x[0] == 6)[2].decode("utf-8") == "GI_RootNode")
+
+    # ==== 1b. 聚光灯槽位（半径=f52.f2 / 角度=f52.f3 / 强度=f52.f4）====
+    comp_sp = component.light_component(name="探针聚光", group="f52", radius=33.3,
+                                        intensity=7.7, angle=47.5,
+                                        effect_range=21.5, color=0xFF00FF00)
+    ent_sp = parse(parse(next(x for x in parse(comp_sp) if x[0] == 49)[2])[0][2])
+    lp_sp = parse(next(x for x in ent_sp if x[0] == 501)[2])
+    l4sp = parse(next(x for x in lp_sp if x[0] == 4)[2])
+    gsp = parse(next(x for x in l4sp if x[0] == 52)[2])
+    ok("聚：外层 f501.f4.f2 = 生效范围 21.5",
+       abs(_s.unpack("<f", next(x for x in l4sp if x[0] == 2)[2])[0] - 21.5) < 1e-4)
+    ok("聚：f52.f2 = 半径 33.3",
+       abs(_s.unpack("<f", next(x for x in gsp if x[0] == 2)[2])[0] - 33.3) < 1e-4)
+    ok("聚：f52.f3 = 角度 47.5",
+       abs(_s.unpack("<f", next(x for x in gsp if x[0] == 3)[2])[0] - 47.5) < 1e-4)
+    ok("聚：f52.f4 = 强度 7.7",
+       abs(_s.unpack("<f", next(x for x in gsp if x[0] == 4)[2])[0] - 7.7) < 1e-4)
+    ok("聚：f52.f5 = 颜色 0xFF00FF00",
+       viv(next(x for x in gsp if x[0] == 5)[2]) == 0xFF00FF00)
+    ok("聚光：外层 f501.f4 **带 f1=1**（判别律：带 f1 ⇔ 聚光灯）",
+       next((viv(x[2]) for x in l4sp if x[0] == 1), None) == 1)
 
     # ==== 2. 放置目标实体（球体=灯头基元）====
     rp = entity.entity_place(aid=SPHERE, pos=(0.0, 20.0), guid=GUID_T)

@@ -40,9 +40,11 @@
 - **吃**：level_name + target_guid + cid + payload_spec（组件条目字节；或 `light_component(...)` 生成器）+ slot（5/6/7/8，默认 7）
 - **吐**：关卡新版本——目标实体槽位追加/替换一个组件条目（插到尾 aid 字段 f8 之前）
 - **保证**：前置（实体在位/cid 合法/不超限额）→ 后验（roundtrip + 读回在位 + 载荷逐字节一致 + 实体数不变 + trial_gate）
-- **光源组件**（案例 #75）：f7 槽 cid38，载荷字段 f49；`light_component(name, radius, intensity, effect_range, color, attach, pos, rot, seq, group)`
+- **光源组件**（案例 #75）：f7 槽 cid38，载荷字段 f49；`light_component(name, radius, intensity, effect_range, color, attach, pos, rot, seq, group, angle)`
+  （槽位语义 2026-10-15 订正：半径→变体 `f2`、强度→点 `f51.f3`／聚 `f52.f4`、角度→聚 `f52.f3`、生效范围→外层 `f501.f4.f2`；
+  判别律：外层 `f501.f4` **带 `f1` ⇔ 聚光灯、不带 `f1` ⇔ 点光源**；`f51`=点光源／`f52`=聚光灯）
 - **模型可见性组件**：f6 槽 cid8，载荷字段 f18；`visible_component(visible)` / `set_visible(level, guid, visible)`——f18 删 f1 = 不可见，`{f1:1,f501:1}` = 可见。*注*：f6 槽组件条目不携带 f2（与 f7 槽三字段形不同）；单位状态「隐藏角色」路字节面不可构造（编辑器 cid 未知且全档零配置实例），故走 f6#8 路。
-- **现状**：🔶 自测 37 条 PASS；真实导入/试玩 PENDING-GAME
+- **现状**：🔶 自测 46 条 PASS；真实导入/试玩 PENDING-GAME
 
 ## 资产域
 
